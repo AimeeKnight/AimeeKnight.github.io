@@ -34,12 +34,16 @@ to add SparkPost to your app.</p>
 <p>Figaro's generate command will create an <strong>application.yml</strong> file for you and automatically add it to your <strong>.gitignore</strong>!</p>
 <p>Now, add the variables you want hidden into <strong>config/application.yml</strong>.<br />
 It will look something like this if you use Gmail:</p>
-<pre title="application.yml">GMAIL_USERNAME: person@gmail.com
+
+{% highlight ruby %}
+GMAIL_USERNAME: person@gmail.com
 GMAIL_PASSWORD: foobar
 SECRET_TOKEN: 6946a9da401cecfff799b9f2a8c9ef01c454fc4c45b8610350cccb1c82763862f473d390ae549b0919fd327fc01abc49d998202e2e41cee2c07b95d6e6fba3b8</pre>
 <p>(No, that's not actually my token. You can generate them whenever needed by running <code>$ rake secret</code> in terminal.)</p>
 <p>Then just access your environment variables wherever they're needed within your app. In <strong>config/initializers/secret_token.rb</strong> it would look something like this.</p>
-<pre title="secret_token.rb">MyApp::Application.config.secret_token = ENV["SECRET_TOKEN"]</pre>
+< title="secret_token.rb">MyApp::Application.config.secret_token = ENV["SECRET_TOKEN"]
+{% endhighlight %}
+
 <p>Next, run<br />
 <code>$ rake figaro:heroku</code><br />
 to add your environment variables to Heroku. If you're like me and want to see proof, you can run<br />
@@ -57,9 +61,15 @@ to generate your password.</p>
 <p>Ok, almost there. Now back to your app's directory. In <strong>config/initializers/devise.rb</strong>, find<br />
 <code>config.mailer_sender</code><br />
 and set that to your SendGrid email environment variable (that was generated for you when running the commands above). It will look like this:</p>
-<pre title="devise.rb">config.mailer_sender = ENV["SENDGRID_USERNAME"]</pre>
+
+{% highlight ruby %}
+config.mailer_sender = ENV["SENDGRID_USERNAME"]
+{% endhighlight %}
+
 <p>Next, in <strong>envrionments/production.rb</strong> you'll need to include the following for Devise.</p>
-<pre title="production.rb">config.action_mailer.default_url_options = { :host =&gt; 'whatever-heroku-gives-you.herokuapp.com'} 
+
+{% highlight ruby %}
+config.action_mailer.default_url_options = { :host =&gt; 'whatever-heroku-gives-you.herokuapp.com'}
 
 config.action_mailer.delivery_method = :smtp
 
@@ -71,5 +81,7 @@ authentication: "plain",
 enable_starttls_auto: true,
 user_name: ENV["SENDGRID_USERNAME"],
 password: ENV["SENDGRID_PASSWORD"]
-}</pre>
+}
+{% endhighlight %}
+
 <p>Run through your deploy process and you will be good to go!</p>

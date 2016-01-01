@@ -28,15 +28,17 @@ author:
 <p>I've been meaning to write my first blog post, but have a hard time stepping away from my own learning for a moment to share something I've learned. With that said, this is going to be short and sweet (but hopefully prevent some headaches)!</p>
 <p>There seems to be some inconsistency between the development and production environments with how the Twitter Bootstrap Rails gem is being handled in the Rails Javascript manifest file. The solution I've come up with (thanks to some help from Stackoverflow) is simple. </p>
 <p>In development, make sure you're including bootstrap first!</p>
-<pre title="application.js">
+
+{% highlight ruby %}
 //= require bootstrap
 //= require jquery
 //= require jquery_ujs
-</pre>
+{% endhighlight %}
 <p>In production, make sure you're including jQuery first!</p>
-<pre title="application.js">
+< title="application.js">
+{% highlight ruby %}
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-</pre>
+{% endhighlight %}
 <p>Simple as that... you're Bootstrap dropdown should now work depending on your environment. </p>

@@ -22,7 +22,9 @@ author:
 <p>Up until this week, I'd understood closures only at face value... I could explain what they were, but hadn't reached the point of knowing how to really utilize them in my code. So, I want to record some notes explaining how they work, and an instance for using them effectively.</p>
 <p>Every function, comes with an associated environment. JavaScript Allonge states this wonderfully; "Every time a function is invoked, a new environment is created. The "x" in a expression that we call a “variable” is itself an expression that is evaluated by looking up the value in the environment." When you define a function, within another function, the inner function's environment, also includes the outer function's environment.</p>
 <p>Closures in JavaScript also mean that a functions variable values are set when the function is called... not when it's defined. With loops, this can get tricky! I've added some additional comments to the snippet below from Mark Story's blog explaining how this works. Essentially, we first define a function "clicker". Then, we call clicker within our loop to create a closure which captures each number, and ensures our event listener is set according to i's current iteration value. </p>
-<pre class="lang:js decode:true" title="Closures in JavaScript">var numbers = [1, 2, 3, 4, 5];
+
+{% highlight javascript %}
+var numbers = [1, 2, 3, 4, 5];
 for (var i in numbers) {
   var num = numbers[i];
   var anchor = document.createElement('A');
@@ -45,6 +47,8 @@ for (var i in numbers) {
 // call clicker before existing the loop to pass in the current value of i
 
 anchor.addEventListener('click', clicker(num), false);
-}</pre>
+}
+{% endhighlight %}
+
 <p>Of course, there are a lot more examples of use cases for closures. In class, we've been using closures to create private properties for our classes.</p>
 <p>Well, I've got a lot of code to write, and a lot of great material to read. I hope to post at least once monthly in order to highlight topics we're covering at NSS. Take care.</p>

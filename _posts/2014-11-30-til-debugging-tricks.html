@@ -23,19 +23,42 @@ author:
 <p>Now that I'm working on a larger code base, debugging has become increasingly important and complex. With that said, I decided to dig into some documentation, and explore how I can use tools that already exist more productively. Below are some of the tricks I've come up with so far.</p>
 <h2>Chrome Dev Tools</h2>
 <h4><strong>Console:</strong></h4>
-<pre class="lang:default decode:true">keys(window);</pre>
+
+{% highlight javascript %}
+keys(window);
+{% endhighlight %}
+
 <p>The keys method takes any object and returns its properties. Passing in window, is a great way to check for global variables.</p>
-<pre class="lang:default decode:true ">monitorEvents(window, "click");</pre>
+
+{% highlight javascript %}
+monitorEvents(window, "click");
+{% endhighlight %}
+
 <p>The monitorEvents method will print the event's object to the console. This one's pretty cool to play around with!</p>
-<pre class="lang:default decode:true">$0;</pre>
+
+{% highlight javascript %}
+$0;
+{% endhighlight %}
+
 <p>Lost in a see of divs? This will print only the currently inspected element to the console.</p>
-<pre class="lang:default decode:true">$_;</pre>
+
+{% highlight javascript %}
+$_;
+{% endhighlight %}
+
 <p>I used this one in the past, but it had escaped me. The console is definitely not a replacement for a full editor, but with $_ you can easily retrieve the result of your previous command.</p>
 <p>Speaking of an editor replacement, Shift + Enter acts as a return, allowing you to play around with methods, or anything else you'd need multiple lines for.</p>
-<pre class="lang:default decode:true ">Object.defineProperty(object, property, descriptor);</pre>
+
+{% highlight javascript %}
+Object.defineProperty(object, property, descriptor);
+{% endhighlight %}
+
 <p>Descriptor is just an object. And, by defining a getter and setter that wrap debugger on that object, you can pause and inspect the state of your application whenever the property you've passed is read or written to.</p>
-<pre class="lang:default decode:true">Object.observe(object, function(){});
-</pre>
+
+{% highlight javascript %}
+Object.observe(object, function(){});
+{% endhighlight %}
+
 <p>The observe method is pretty cool by itself, and using it for debugging is really useful. Use it to see whenever a new property is added to the passed in object.</p>
 <h4><strong>Sources:</strong></h4>
 <p>Need to find something specific in the sea of files? Cmd + Shift + P will open up a search box.</p>
@@ -53,15 +76,31 @@ author:
 </ul>
 <h4>Console Object:</h4>
 <p>(Although these are helpful with Node, they can be used in the browser as well)</p>
-<pre class="lang:default decode:true">console.dir();</pre>
+
+{% highlight javascript %}
+console.dir();
+{% endhighlight %}
+
 <p>Passing an object to the dir method with output the object as json instead of the typical string.</p>
-<pre class="lang:default decode:true ">console.trace();</pre>
+
+{% highlight javascript %}
+console.trace();
+{% endhighlight %}
+
 <p>Unsure how your method is call is being initialized? The trace method is the right tool for the job.</p>
 <h2>Angular</h2>
 <p>Maybe you were wondering about the json filter. The creators of Angular actually said that this is a technique they've used.</p>
-<pre class="lang:default decode:true ">&lt;pre&gt;{{ apiResult | json }}&lt;/pre&gt;</pre>
+
+{% raw %}
+{{ apiResult | json }}
+{% endraw %}
+
 <p>Much nicer on the eyes.</p>
 <h4>Batarang:</h4>
 <p>I haven't played around with Batarang in depth, but just by adding the extension, you enter things like;</p>
-<pre class="lang:default decode:true">$scope;</pre>
+
+{% highlight javascript %}
+$scope;
+{% endhighlight %}
+
 <p>in the console, and see everything on that scope object.</p>
