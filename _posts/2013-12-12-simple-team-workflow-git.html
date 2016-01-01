@@ -1,0 +1,40 @@
+---
+layout: post
+title: Simple Team Workflow for Git
+date: 2013-12-12 21:23:52.000000000 -05:00
+type: post
+published: true
+status: publish
+categories:
+- GitHub
+- Pair Programming
+tags: []
+meta:
+  _edit_last: '2'
+  bwps_enable_ssl: ''
+  _css_code: "div#social a img {\r\n  padding: 0px;\r\n  margin: 10px 3px 0 0;\r\n}"
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<p>Simply, my thoughts recorded for future iteration.</p>
+<p>1. <code>$ git clone </code><br />
+<em>Only needed on first cycle.</em></p>
+<p>2. <code>$ cd cloned_root_directory_name</code></p>
+<p>3. <code>$ git pull</code><br />
+<em>If done immediately after 'git pull' this step isn't needed.</em></p>
+<p>4. <code>$ git checkout -b feature_branch_name</code></p>
+<p>5. do some hacking</p>
+<p>6. <code>git add .</code></p>
+<p>7. <code>git commit -m "your message"</code><br />
+<em>Repeat steps 5-7 as needed.</em></p>
+<p>8. <code>$ git checkout master</code></p>
+<p>9. <code>$ git pull</code><br />
+<em>Merging the remote master repo with your local master repo should be a clean fast forward since your hacking has been contained to your feature branch.</em></p>
+<p>10. <code>$ git rebase feature_branch_name</code><br />
+<em>This is where things could potentially get ugly. To prevent complicated conflict's it is recommended to repeat this often.</em></p>
+<p>11. <code>$ git push origin master</code><br />
+<em>Reminder, this is meant to be a simple workflow for a small team. It is highly advisable to check if there have been any pushes to the remote master since you completed step 8.</em></p>

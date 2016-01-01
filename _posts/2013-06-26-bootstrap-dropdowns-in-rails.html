@@ -1,0 +1,42 @@
+---
+layout: post
+title: Bootstrap Dropdowns in Rails
+date: 2013-06-26 12:22:55.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Rails
+tags: []
+meta:
+  bwps_enable_ssl: ''
+  _edit_last: '2'
+  Layout: 1c
+  _css_code: "div#social a img {\r\n  padding: 0px ;\r\n  margin: 10px 3px 0 0;\r\n}"
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<style>
+.sidebar-inter-content, #sidebar-entry {<br />
+  display: none;<br />
+}<br />
+</style>
+<p>I've been meaning to write my first blog post, but have a hard time stepping away from my own learning for a moment to share something I've learned. With that said, this is going to be short and sweet (but hopefully prevent some headaches)!</p>
+<p>There seems to be some inconsistency between the development and production environments with how the Twitter Bootstrap Rails gem is being handled in the Rails Javascript manifest file. The solution I've come up with (thanks to some help from Stackoverflow) is simple. </p>
+<p>In development, make sure you're including bootstrap first!</p>
+<pre title="application.js">
+//= require bootstrap
+//= require jquery
+//= require jquery_ujs
+</pre>
+<p>In production, make sure you're including jQuery first!</p>
+<pre title="application.js">
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap
+</pre>
+<p>Simple as that... you're Bootstrap dropdown should now work depending on your environment. </p>

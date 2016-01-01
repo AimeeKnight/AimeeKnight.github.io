@@ -1,0 +1,65 @@
+---
+layout: post
+title: Backbone.js RESTful URL calls in Rails
+date: 2013-10-08 14:47:37.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Backbone
+- Rails
+tags: []
+meta:
+  _edit_last: '2'
+  bwps_enable_ssl: ''
+  _css_code: "div#social a img {\r\n  padding: 0px;\r\n  margin: 10px 3px 0 0;\r\n}"
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<p>Just some notes written down for my own reference. Enjoy them if you wish!</p>
+<pre class="lang:default decode:true">var BookModel = Backbone.Model.extend({
+  urlRoot: '/books'
+});
+
+var BookCollection = Backbone.Collection.extend({
+  model: BookModel,
+  url: '/books'
+});</pre>
+<p>&nbsp;</p>
+<p><strong>Create (POST)</strong></p>
+<pre class="lang:default decode:true">var brandNewBook = new BookModel({ title: '1984', author: 'George Orwel' });
+brandNewBook.save();</pre>
+<p>Backbone sees I'm trying to create a new book and makes the following POST request received by the Rails router:</p>
+<p><em>POST /books HTTP/1.1</em><br />
+<em> Host: example.com</em></p>
+<p><em>{"title":"1984","author":"George Orwel"}</em></p>
+<p>&nbsp;</p>
+<p><strong>Read (GET) -- collection</strong></p>
+<pre class="lang:default decode:true">BookCollection().fetch();</pre>
+<p>Backbone sees I'm trying to read a collection of books and makes the following GET request received by the Rails router:</p>
+<p><em>GET /books HTTP/1.1</em><br />
+<em> Host: example.com</em></p>
+<p>&nbsp;</p>
+<p><strong>Read (GET) -- object</strong></p>
+<pre class="lang:default decode:true">new BookModel({ id: 42 }).fetch();</pre>
+<p>Backbone sees I'm trying to read a single book and makes the following GET request received by the Rails router:</p>
+<p><em>GET /books/42 HTTP/1.1</em><br />
+<em> Host: example.com</em></p>
+<p>&nbsp;</p>
+<p><strong>Update (PUT)</strong></p>
+<pre class="lang:default decode:true">brandNewBook.set('author', 'George Orwell');
+brandNewBook.save();</pre>
+<p>Backbone knows 'brandNewBook' is in the database so it updates the book with a PUT request received by the Rails router:</p>
+<p><em>PUT /books/84 HTTP/1.1</em><br />
+<em> Host: example.com</em></p>
+<p><em>{"title":"1984","author":"George Orwell"}</em></p>
+<p>&nbsp;</p>
+<p><strong>Destroy (DELETE)</strong></p>
+<pre class="lang:default decode:true">brandNewBook.destroy();</pre>
+<p>Backbone sees I'm trying to destroy a single book and makes the following DELETE request received by the Rails router:</p>
+<p><em>DELETE /books/84 HTTP/1.1</em><br />
+<em> Host: example.com</em></p>

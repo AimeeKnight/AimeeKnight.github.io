@@ -1,0 +1,34 @@
+---
+layout: post
+title: Function Hoisting in Javascript
+date: 2013-11-05 19:53:22.000000000 -05:00
+type: post
+published: true
+status: publish
+categories:
+- JavaScript
+tags: []
+meta:
+  _edit_last: '2'
+  bwps_enable_ssl: ''
+  _css_code: "div#social a img {\r\n  padding: 0px;\r\n  margin: 10px 3px 0 0;\r\n}"
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<p>Context: I'm writing this as a quick reminder to myself. Sort of like when I was back in Catholic elementary school and the nuns would make us tirelessly write out our vocabulary words until our wrists were ready to fall off!</p>
+<p>Function hoisting in JavaScript is determined based on whether you're using a function expression, or a function declaration. I'm going to let an example do the talking.</p>
+<pre class="lang:default decode:true">marcoExpression(); // TypeError: undefined is not a function
+marcoDeclaration(); // Polo!
+
+var marcoExpression = function() {
+console.log("Polo!");
+};
+
+function marcoDeclaration() {
+console.log("Polo!");
+};</pre>
+<p>So, you can see from above that the Javascript interpreter treats these functions differently. With function expressions, only the variable is hoisted. With function declarations, the entire function is hoisted and as such can be called either before or after the declaration. In other words, function declarations are loaded before being executed, while a function expression itself is only loaded once it's executed.</p>

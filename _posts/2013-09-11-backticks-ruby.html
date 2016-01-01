@@ -1,0 +1,33 @@
+---
+layout: post
+title: "`Backticks` in Ruby"
+date: 2013-09-11 11:25:43.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Bash
+- MySQL
+- Ruby
+tags: []
+meta:
+  _edit_last: '2'
+  bwps_enable_ssl: ''
+  _css_code: "div#social a img {\r\n  padding: 0px;\r\n  margin: 10px 3px 0 0;\r\n}"
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<p>I started an apprenticeship a week ago and I've learned an incredible amount of tricks through our pairing sessions. Side note... <a title="Screenhero" href="http://screenhero.com/" target="_blank">Screehero</a> is the pairing app we're using and it's wonderful! Part of my task for the week was to automate the process for backing up our production database to our local machines in Ruby. By now, I'm somewhat comfortable with Ruby and terminal so separately these tasks didn't seem too bad. The challenge was to figure out how to execute bash in a Ruby script. To my surprise, this was actually MUCH easier than I was expecting. My trick, was to wrap my bash in backticks within my .rb files. I imagine this can be pretty powerful since instead of inputting endless commands in terminal, I can now simply feed it my .rb file to execute. Cheers to becoming  a lazy programmer! Now if only I could get the benefits of logging 30 miles running each week with a shortcut like this!</p>
+<p>Here my super simple Ruby script in case anyone needs some MySQL bash commands for a SQL dump.</p>
+<pre class="lang:default decode:true " title="ruby_dumb.rb">#!/usr/bin/ruby
+ 
+#EXPORT
+`mysqldump -u root -p production_db &gt; backup.sql`
+
+#IMPORT
+`mysql -u root -p -e 'create database backup_db'`
+`mysql -u root -p backup_db &lt; backup.sql`</pre>

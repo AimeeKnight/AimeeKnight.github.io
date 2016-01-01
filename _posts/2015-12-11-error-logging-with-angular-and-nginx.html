@@ -1,0 +1,78 @@
+---
+layout: post
+title: Error Logging with Angular and Nginx
+date: 2015-12-11 22:09:22.000000000 -05:00
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '2'
+  _css_code: ''
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<p>Mistakes happen. It’s a fact of life. In fact, mistakes are often a precursor to growth... as long as you learn from them! Occasionally at work, our support team receives feedback from customers trying to sign up for one of our paid tiers, explaining that the transaction failed. Not only does that stink for our customers, but it was a pain point for us. We integrate with a third party for payments, that at times responds to a request with what’s essentially an unknown error. In most cases we’re able to surface a helpful error to the user based on logic that parses the response. But up until a few months ago, we had zero visibility into the unknown errors. We had no way to help our customers, and no way to learn from the problem! After looking at a few more third party solutions, we decided to leverage functionality our current stack already provided.</p>
+<p>Some updates to our Angular-based UI and our Nginx web server was all it took. And while we were at it, we went ahead and used the approach to log uncaught exceptions too. In the UI, we built a simple service for posting errors to Nginx. We just have to get the username from the session, along with the error response and data posted, (of course, for compliance reasons, we never deal with credit card information, our third party services takes care of that) and post it back to our logs. No need to catch a rejected promise in the service either, because for our case, we don’t have a need for handling failed log attempts.</p>
+<pre class="lang:js decode:true" title="error-logger.js">(function() {
+  let dependencies = ['ApplicationConfig', 'Session', '$http'];
+ 
+  class ErrorLogger {
+    constructor() {
+      dependencies.forEach((dep, index) =&gt; this[dep] = arguments[index]);
+      this.uiErrorApiBase = this.ApplicationConfig.errorLogs.apiBase;
+    }
+ 
+    /*
+     * Gets username from the current session
+     *
+     * @returns {String|undefined} session username when exists; undefined otherwise
+     */
+     getUsername() {
+      return (this.Session.getData('user') || {}).username;
+    }
+ 
+    /*
+     * Posts to Nginx ui error logs
+     *
+     * @param {Object} error response
+     * @param {Object} request data
+     */
+    post(err, data) {
+      let log = {
+        Error: err
+      };
+      if (this.getUsername()) {
+        log.Username = this.getUsername();
+      }
+      if (data) {
+        log.RequestBody = data;
+      }
+      this.$http.post(this.uiErrorApiBase + '/errorlog', JSON.stringify(log));
+    }
+  }
+ 
+  ErrorLogger.$inject = dependencies;
+  angular.module('fd.services.error-logger', []).service('ErrorLogger', ErrorLogger);
+})();</pre>
+<p>From the Nginx side, we’re able to customize our log format by leveraging the built in directives and variables available in the core module as well as the log and proxy modules. In our case, we’re using the access_log and log_format directives, and the $msec variable from the log module. Then $proxy_add_x_forwarded_for from the proxy module. We get $http_user_agent and $request_body from the core module. With that in place, we can easily see information about the request, in addition to the data being sent from the UI.</p>
+<pre class="lang:default decode:true" title="my-app.conf">log_format uierr '$msec "$proxy_add_x_forwarded_for" $http_user_agent "$request_body"';</pre>
+<p>Finally, back to our UI and the case of uncaught exceptions. Angular comes with a global application exception handler $exceptionHandler, that does exactly that. In our case we use the $provide service’s $decorator method to add additional behavior. It's called in the config phase callback, so that the decorator can intercept the service creation, and we use the $delegate method to retain the exception handlers base functionality.</p>
+<pre class="lang:js decode:true" title="app.js">$provide.decorator('$exceptionHandler', function($delegate, $injector) {
+  var postException = _.throttle(function(err, data) {
+    var ErrorLogger = $injector.get('ErrorLogger');
+    ErrorLogger.post(err, data);
+  }, 300, {leading: true});
+ 
+  return function(exception, cause) {
+    var stack = (exception.stack || {}).toString();
+    postException(exception.toString(), {stack: stack});
+    $delegate(exception, cause);
+  };
+});</pre>
+<p>As any JavaScript developer will know, we have a lot of tools at our disposal right now, but by knowing your existing tools well, you can arrive at simple, clean solution that addresses your problem without having to pull in extra dependencies, and without the need to learn additional API’s. Now whenever our support team needs to assist customers with their subscriptions, we’re able to quickly access additional details, and as an added bonus, we have an easy way to gain insight into exceptions within our application to prevent future occurrences!</p>

@@ -1,0 +1,32 @@
+---
+layout: post
+title: Update Your App's Git Remote Name
+date: 2013-08-16 14:56:38.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Rails
+tags: []
+meta:
+  bwps_enable_ssl: ''
+  _css_code: "div#social a img {\r\n  padding: 0px;\r\n  margin: 10px 3px 0 0;\r\n}"
+  _edit_last: '2'
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<p>1. Find the setting button for your app on Heroku.com<br />
+2. Edit your apps name and click 'Rename'</p>
+<p>Next, since the directions above use the Heroku website to update the app name, and because you may have other developers contributing to your project, the individual git remotes will also need to be updated. </p>
+<p>3. In terminal (still in your apps root directory) run:</p>
+<p><code>$ git remote rm heroku</code></p>
+<p>followed by</p>
+<p><code>$ git remote add heroku git@heroku.com:yourappname.git</code></p>
+<p>You're now good to go!</p>
+<p>UPDATE: There is actually a much simpler way to go about renaming your app. Simply run:<br />
+<code>heroku apps:rename newname</code></p>
+<p>If you've tackled your CLI fears this is much easier as it allows you to rename your app and updates your remote Heroku repo in one.</p>

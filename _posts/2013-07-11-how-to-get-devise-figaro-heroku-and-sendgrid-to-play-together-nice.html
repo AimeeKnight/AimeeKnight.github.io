@@ -1,0 +1,75 @@
+---
+layout: post
+title: How to get Devise, Figaro, Heroku and emailing to Play Together Nicely
+date: 2013-07-11 15:15:09.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Rails
+tags: []
+meta:
+  _edit_last: '2'
+  bwps_enable_ssl: ''
+  _wp_old_slug: how-to-get-devise-figaro-heroku-and-sendgrid-to-work-together
+  Layout: 1c
+  _css_code: "div#social a img {\r\n  padding: 0px ;\r\n  margin: 10px 3px 0 0;\r\n}"
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<h3>Update:</h3>
+<p>I recently made the switch over to SparkPost, which is one of Heroku’s newest add-ons (I also work there)! There is a free basic plan that includes up to 10K of emails a month. SparkPost has the highest inbox placement of any provider, and real-time analytics with over 40 different metrics. It's also built by Message Systems, which is the email provider for large scale companies like Facebook, Twitter, and Pinterest, so that made migration an easy choice! The move was straight forward, quick, and easy!</p>
+<p>Once you have a card on file, just run<br />
+<code>heroku addons:create sparkpost:free</code><br />
+to add SparkPost to your app.</p>
+<p>I'm going to write this from the standpoint of where I was last week so here's some background. I, like many other newbies was happily going along completing various Rails Tutorials not aware that my "secret token" was being committed to my public GitHub repo for the world to see. For random tutorials this isn't really a problem, but when it's time to start an actual app you plan to deploy, then this is going to be necessary. The solution... environment variables. There are a ton of ways to go about hiding your apps token (and other confidential info like emails and passwords), but I opted for <a title="Figaro" href="http://https://github.com/laserlemon/figaro">Figaro</a>.</p>
+<p>Configuration is pretty straight forward. Add Figaro to your <strong>Gemfile</strong> and run<br />
+<code>$ bundle install</code></p>
+<p>followed by<br />
+<code>$ rails generate figaro:install</code></p>
+<p>Figaro's generate command will create an <strong>application.yml</strong> file for you and automatically add it to your <strong>.gitignore</strong>!</p>
+<p>Now, add the variables you want hidden into <strong>config/application.yml</strong>.<br />
+It will look something like this if you use Gmail:</p>
+<pre title="application.yml">GMAIL_USERNAME: person@gmail.com
+GMAIL_PASSWORD: foobar
+SECRET_TOKEN: 6946a9da401cecfff799b9f2a8c9ef01c454fc4c45b8610350cccb1c82763862f473d390ae549b0919fd327fc01abc49d998202e2e41cee2c07b95d6e6fba3b8</pre>
+<p>(No, that's not actually my token. You can generate them whenever needed by running <code>$ rake secret</code> in terminal.)</p>
+<p>Then just access your environment variables wherever they're needed within your app. In <strong>config/initializers/secret_token.rb</strong> it would look something like this.</p>
+<pre title="secret_token.rb">MyApp::Application.config.secret_token = ENV["SECRET_TOKEN"]</pre>
+<p>Next, run<br />
+<code>$ rake figaro:heroku</code><br />
+to add your environment variables to Heroku. If you're like me and want to see proof, you can run<br />
+<code>$ heroku config</code><br />
+just to make sure they're there.</p>
+<p>Now for the emails. (It's worth mentioning, that I used my gmail account initially). Heroku recommends SendGrid, and I'm glad I went this route. The basic plan is free and comes with 6K emails monthly. You'll need a credit card on file with Heroku, but there are no charges if you remain in that range.</p>
+<p>Once you have a card on file, run<br />
+<code>heroku addons:add sendgrid:starter</code><br />
+to add SendGrid to your app.</p>
+<p>To generate your apps email run<br />
+<code>$ heroku config:get SENDGRID_USERNAME</code>,</p>
+<p>followed by<br />
+<code>$ heroku config:get SENDGRID_PASSWORD</code><br />
+to generate your password.</p>
+<p>Ok, almost there. Now back to your app's directory. In <strong>config/initializers/devise.rb</strong>, find<br />
+<code>config.mailer_sender</code><br />
+and set that to your SendGrid email environment variable (that was generated for you when running the commands above). It will look like this:</p>
+<pre title="devise.rb">config.mailer_sender = ENV["SENDGRID_USERNAME"]</pre>
+<p>Next, in <strong>envrionments/production.rb</strong> you'll need to include the following for Devise.</p>
+<pre title="production.rb">config.action_mailer.default_url_options = { :host =&gt; 'whatever-heroku-gives-you.herokuapp.com'} 
+
+config.action_mailer.delivery_method = :smtp
+
+config.action_mailer.smtp_settings = {
+address: "smtp.sendgrid.net",
+port: 25,
+domain: "heroku.com", 
+authentication: "plain",
+enable_starttls_auto: true,
+user_name: ENV["SENDGRID_USERNAME"],
+password: ENV["SENDGRID_PASSWORD"]
+}</pre>
+<p>Run through your deploy process and you will be good to go!</p>

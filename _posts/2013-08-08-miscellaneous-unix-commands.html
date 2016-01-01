@@ -1,0 +1,42 @@
+---
+layout: post
+title: Assorted Unix Commands
+date: 2013-08-08 12:25:29.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Linux
+tags: []
+meta:
+  _edit_last: '2'
+  bwps_enable_ssl: ''
+  _css_code: "div#social a img {\r\n  padding: 0px;\r\n  margin: 10px 3px 0 0;\r\n}"
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<h5>1. mkdir -p</h5>
+<p>If the parent directories don't exist, the <code>-p</code> argument creates them.<br />
+Example: <code>$ mkdir -p unitedstates/illinois/chicago</code></p>
+<h5>2. /</h5>
+<p>Brings you to the absolute root folder.<br />
+Example: <code>$ cd /</code></p>
+<h5>3. ~</h5>
+<p>Brings you to the relative user account home folder.<br />
+Example: <code>$ cd ~</code></p>
+<h5>4. pushd &amp; popd</h5>
+<p>The <code>pushd</code> and <code>popd</code> commands work just like array methods, allowing you to easily navigate between multiple directories. If you're at your <code>desktop</code>, use <code>pushd</code> and pass it the path to <code>chicago</code> to change to <code>chicago</code>. When you want to go back to your <code>desktop</code>, just use <code>popd</code>, (without a parameter) to take <code>chicago</code> of the stack. You can do this for multiple folders, and it just pushes them on the end of an "array" of directories and pops them off as you need them, first in, first out. Note that <code>pushd</code> can also be used without a parameter to swap between directories already on the stack.<br />
+Example:<br />
+<code>$ cd desktop<br />
+$ mkdir -p unitedstates/illinois/chicago<br />
+$ pushd unitedstates/illinois/chicago<br />
+~/desktop/unitedstates/illinois/chicago ~/desktop<br />
+$ popd<br />
+~/desktop<br />
+$ pwd<br />
+~/desktop</code></p>
+<p>And for a little fun I have to admit something. I have a horrible irrational fear that my cat is going to somehow walk across my laptop when I've left terminal open and type <code>rm -rf /</code>!</p>

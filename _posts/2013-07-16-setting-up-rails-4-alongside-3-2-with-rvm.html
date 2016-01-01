@@ -1,0 +1,53 @@
+---
+layout: post
+title: Setting up Rails 4 Alongside 3.2 with RVM
+date: 2013-07-16 12:21:32.000000000 -04:00
+type: post
+published: true
+status: publish
+categories:
+- Rails
+tags: []
+meta:
+  _edit_last: '2'
+  bwps_enable_ssl: ''
+  Layout: 1c
+  _css_code: "div#social a img {\r\n  padding: 0px ;\r\n  margin: 10px 3px 0 0;\r\n}"
+author:
+  login: aimeeknight83@gmail.com
+  email: aimeeknight83@gmail.com
+  display_name: Aimee Knight
+  first_name: Aimee
+  last_name: Knight
+---
+<p>Here goes another newbie post. I’ve been told over and over again not to dig into Rails 4 yet since there’s not a lot of info out there. But, if I’m learning Rails for the first time, doesn’t it make sense to hash out the differences and not develop habits that are going to be depreciated? So now, I’ve set up my environment so I can have the best of both worlds!</p>
+<p>In my newness, I’ve unfortunately allowed a slew of gems in my default gemset which makes things messy when you want to work with various versions of Ruby and or Rails depending on your app. My solution going forward is to create .rvmc files per app (or groups of apps), that will contain custom gemsets so I’m not polluting my default environment. This is best done with a clean (or minimally polluted default gemset), but works fine if you’re like me and already have Rails 3.2.X set as your default.</p>
+<p>If you already have RVM installed, go ahead and get the latest version. In terminal run</p>
+<p><code>$ rvm get stable –-autolibs=enable</code></p>
+<p>The --autolibs flag tells rvm to automatically install necessary dependancies on you system as well (important for those of us still with student status)! </p>
+<p>From there, you can check for any Ruby updates you want by running</p>
+<p><code>$ rvm list known</code></p>
+<p>Since Rails 5, (gasp, I’m still trying to learn 3.2 and 4) will require 2.0, I figured I might as well get going with that!</p>
+<p>To install run</p>
+<p><code>$ rvm install 2.0.0</code></p>
+<p>Of course you can explicitly use any version returned from the known list also. </p>
+<p>Now for the fun stuff (many thanks to Kevin Lawver from Rails Machine for helping me with this part)!<br />
+In terminal, cd into whichever directory you keep your rails projects, create a new directory for Rails 4, then cd into that one. </p>
+<p><code>$ cd rails_projects<br />
+$ mkdir rails_4<br />
+$ cd rails_4</code></p>
+<p>From there, you’ll create a directory specific gemset. I’ve explicitly stated I want to use Ruby 2.0.0, but of course you can choose whichever version you like. </p>
+<p><code>rvm –-rvmrc –-create 2.0.0@rails_4</code></p>
+<p>Cd out of that directory, and then cd back in. It will ask you to accept the new .rvmc file which you will of course say yes to. </p>
+<p><code>$ cd ..<br />
+$ cd rails_4</code></p>
+<p>For extra assurance you can run</p>
+<p><code>$ ls –a</code></p>
+<p>to see the hidden .rvmc file.<br />
+Then, all that’s left to do is to install Rails 4. Don't panic... it may take a few minutes.</p>
+<p><code>$ gem install Rails</code></p>
+<p>Followed by</p>
+<p><code>$ gem install bundler</code></p>
+<p>You can now run</p>
+<p><code>$ rails new myApp</code></p>
+<p>To generate you Rails 4 app.</p>
