@@ -28,9 +28,17 @@ author:
 <p>However, if you want the changes to take affect each time you start a new session you're going to need to edit your bash profile. I have sublime set up to open files from iTerm (<a title="See instructions here" href="https://gist.github.com/olivierlacan/1195304" target="_blank">see instructions here</a>) so I can pull up mine for editing like so:</p>
 <p><code>$ sublime .bash_profile</code></p>
 <p>From there,  I simply append the following:</p>
-<pre class="lang:default decode:true" title=".bash_profile">export PS1="[Red Pill@ \W]$"</pre>
+
+{% highlight bash %}
+export PS1="[Red Pill@ \W]$"
+{% endhighlight %}
+
 <p>I happen to like "The Matrix", hence the 'red pill' reference. Again, \W will add my current directory, and I've also decided to keep the default $ at the end.</p>
 <p>I fibbed though, I actually added more than that. Since the bash I/O stream is white by default, I wanted to add some color to my prompt to help visually differentiate the prompt from the I/O stream. my PS1 variable is actually set like so:</p>
-<pre class="lang:default decode:true" title=".bash_profile">export PS1="\[<pre wp-pre-tag-1></pre>33[0;95m\][Red Pill@ \W]$ \[<pre wp-pre-tag-1></pre>33[0m\]"</pre>
+
+{% highlight bash %}
+export PS1="\[\033[0;95m\][Red Pill@ \W]$ \[\033[0m\]"
+{% endhighlight %}
+
 <p>The only difference is the color encoding which wraps my prompt text, effectively setting the color, then turning it off. For a list of colors, you can refer <a title="here" href="http://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/" target="_blank">here</a>.</p>
 <p>Hope that helps, and feel free to contact me through my form if you have questions!</p>
