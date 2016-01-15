@@ -33,7 +33,6 @@ helping out at [Baltimore NodeSchool](http://nodeschool.io/baltimore/).
 
 ### Upcoming Talks:
 
-* [JS Remote Conf (January)](https://allremoteconfs.com/js-2016)
 * [Nation JS (March)](http://nationjs.com/)
 
 ### Interviews:
@@ -47,10 +46,9 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 
 ### Conference Talks:
 
-* [Angular Connect: Getting Comfortable Being
-Uncomfortable](https://youtu.be/B22o_yeDE_s)
-* [Nodevember: Getting Comfortable Being
-Uncomfortable](https://youtu.be/9qkef7IXn6s)
+* [Angular Connect](https://youtu.be/B22o_yeDE_s)
+* [Nodevember](https://youtu.be/9qkef7IXn6s)
+* [JS Remote Conf](https://allremoteconfs.com/js-2016)
 
 ### Contact me
 
