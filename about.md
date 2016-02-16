@@ -43,12 +43,14 @@ Developers](https://devchat.tv/js-jabber/153-jsj-careers-for-junior-developers-w
 Code](http://www.codenewbie.org/podcast/from-skates-to-code)
 * [Get Up And Code: Figure Skating and Software Development With Aimee
 Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-and-software-development-with-aimee-knight/)
+* [Aimee Knight’s Journey From Figure Skater to Software Engineer](http://awayfromthekeyboard.com/2016/01/12/aimee-knights-journey-from-figure-skater-to-software-engineer/)
 
 ### Conference Talks:
 
 * [Angular Connect](https://youtu.be/B22o_yeDE_s)
 * [Nodevember](https://youtu.be/9qkef7IXn6s)
 * [JS Remote Conf](https://allremoteconfs.com/js-2016)
+* [Nation JS](http://nationjs.com/program)
 
 ### Contact me
 
