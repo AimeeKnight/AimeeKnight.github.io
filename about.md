@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-I’m Aimee Knight, a former figure skater and software developer at
-[SparkPost](https://www.sparkpost.com/) in
-Baltimore Maryland where I use Node.js and Angular to help build out email
-infrastructure for companies like Twitter, Facebook, and Pinterest.  In 2014 I
+I’m Aimee Knight, a former figure skater and software engineer at
+[KualiCo](https://www.kuali.co/) where I help build open source software for higher
+education using React and Node. Part of my time in spent in Salt Lake City and
+part of my time in spent in my current home of Baltimore Maryland. In 2014 I
 decided to go all out, and spent six months as a student in the fourth cohort of
 the [Nashville Software School](http://nashvillesoftwareschool.com/) where I focused on JavaScript, Node.js, and Ruby
 on Rails.
