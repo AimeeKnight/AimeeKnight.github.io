@@ -34,6 +34,7 @@ helping out at [Baltimore NodeSchool](http://nodeschool.io/baltimore/).
 ### Upcoming Talks:
 
 * [Nation JS (March)](http://nationjs.com/)
+* [Revolution Conf (May)](http://revolutionconf.com)
 
 ### Interviews:
 
