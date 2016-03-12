@@ -43,7 +43,7 @@ Developers](https://devchat.tv/js-jabber/153-jsj-careers-for-junior-developers-w
 Code](http://www.codenewbie.org/podcast/from-skates-to-code)
 * [Get Up And Code: Figure Skating and Software Development With Aimee
 Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-and-software-development-with-aimee-knight/)
-* [Aimee Knight’s Journey From Figure Skater to Software Engineer](http://awayfromthekeyboard.com/2016/01/12/aimee-knights-journey-from-figure-skater-to-software-engineer/)
+* [AFTK: Aimee Knight’s Journey From Figure Skater to Software Engineer](http://awayfromthekeyboard.com/2016/01/12/aimee-knights-journey-from-figure-skater-to-software-engineer/)
 
 ### Conference Talks:
 
