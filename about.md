@@ -50,7 +50,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Angular Connect](https://youtu.be/B22o_yeDE_s)
 * [Nodevember](https://youtu.be/9qkef7IXn6s)
 * [JS Remote Conf](https://allremoteconfs.com/js-2016)
-* [Nation JS (March)](http://nationjs.com/)
+* [Nation JS](http://nationjs.com/)
 
 ### Contact me
 
