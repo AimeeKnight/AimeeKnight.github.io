@@ -33,7 +33,6 @@ helping out at [Baltimore NodeSchool](http://nodeschool.io/baltimore/).
 
 ### Upcoming Talks:
 
-* [Nation JS (March)](http://nationjs.com/)
 * [Revolution Conf (May)](http://revolutionconf.com)
 
 ### Interviews:
@@ -51,6 +50,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Angular Connect](https://youtu.be/B22o_yeDE_s)
 * [Nodevember](https://youtu.be/9qkef7IXn6s)
 * [JS Remote Conf](https://allremoteconfs.com/js-2016)
+* [Nation JS (March)](http://nationjs.com/)
 
 ### Contact me
 
