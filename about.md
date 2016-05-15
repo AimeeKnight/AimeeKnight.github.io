@@ -31,10 +31,6 @@ personality, and I’m not at peace, unless I have a set of challenges in front 
 me. As a former bootcamper, I also really enjoy mentoring current students, and
 helping out at [Baltimore NodeSchool](http://nodeschool.io/baltimore/).
 
-### Upcoming Talks:
-
-* [Revolution Conf (May)](http://revolutionconf.com)
-
 ### Interviews:
 
 * [JavaScript Jabber: Careers for Junior
@@ -52,6 +48,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Nodevember](https://youtu.be/9qkef7IXn6s)
 * [JS Remote Conf](https://allremoteconfs.com/js-2016)
 * [Nation JS](http://nationjs.com/)
+* [Revolution Conf (May)](http://revolutionconf.com)
 
 ### Contact me
 
