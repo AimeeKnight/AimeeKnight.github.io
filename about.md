@@ -48,7 +48,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Nodevember](https://youtu.be/9qkef7IXn6s)
 * [JS Remote Conf](https://allremoteconfs.com/js-2016)
 * [Nation JS](http://nationjs.com/)
-* [Revolution Conf (May)](http://revolutionconf.com)
+* [Revolution Conf](http://revolutionconf.com)
 
 ### Contact me
 
