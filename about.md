@@ -40,7 +40,10 @@ Code](http://www.codenewbie.org/podcast/from-skates-to-code)
 * [Get Up And Code: Figure Skating and Software Development With Aimee
 Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-and-software-development-with-aimee-knight/)
 * [AFTK: Aimee Knight’s Journey From Figure Skater to Software Engineer](http://awayfromthekeyboard.com/2016/01/12/aimee-knights-journey-from-figure-skater-to-software-engineer/)
-* [Learning React](https://youtu.be/gIH37EZHIOM)
+* [The Web Platform Podcast: Learning
+* React](http://thewebplatformpodcast.com/86-learning-reactjs)
+* [JavaScript Air: For the
+* Beginners](https://javascriptair.com/episodes/2016-06-15/)
 
 ### Conference Talks:
 
