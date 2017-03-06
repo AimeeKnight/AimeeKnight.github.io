@@ -40,6 +40,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [AFTK: Aimee Knight’s Journey From Figure Skater to Software Engineer](http://awayfromthekeyboard.com/2016/01/12/aimee-knights-journey-from-figure-skater-to-software-engineer/)
 * [The Web Platform Podcast: Learning React](http://thewebplatformpodcast.com/86-learning-reactjs)
 * [JavaScript Air: For the Beginners](https://javascriptair.com/episodes/2016-06-15/)
+* [Building Programmers with Aimee Knight](https://building.fireside.fm/27)
 
 ### Conference Talks:
 
