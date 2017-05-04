@@ -44,12 +44,14 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 
 ### Conference Talks:
 
-* [Angular Connect](https://youtu.be/B22o_yeDE_s)
-* [Nodevember](https://youtu.be/9qkef7IXn6s)
-* [JS Remote Conf](https://allremoteconfs.com/js-2016)
-* [Nation JS](http://nationjs.com/)
-* [Revolution Conf](http://revolutionconf.com)
-* [Newbie Remote Conf](https://allremoteconfs.com/newbie-2016)
+* [Angular Connect 2015](https://youtu.be/B22o_yeDE_s)
+* [Nodevember 2015](https://youtu.be/9qkef7IXn6s)
+* [JS Remote Conf 2016](https://allremoteconfs.com/js-2016)
+* [Nation JS 2016](http://nationjs.com/)
+* [Revolution Conf 2016](http://revolutionconf.com)
+* [Codestock 2017](https://allremoteconfs.com/newbie-2016)
+* [Revolution Conf 2017](https://revolutionconf.com/)
+* [International JavaScript Conference 2017](https://javascript-conference.com/)
 
 ### Contact me
 
