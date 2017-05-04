@@ -51,6 +51,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Revolution Conf 2016](http://revolutionconf.com)
 * [Codestock 2017](https://allremoteconfs.com/newbie-2016)
 * [Revolution Conf 2017](https://revolutionconf.com/)
+* [Newbie Remote Conf 2017](https://devchat.tv/register/newbie-remote-conf-2017-single)
 * [International JavaScript Conference 2017](https://javascript-conference.com/)
 
 ### Contact me
