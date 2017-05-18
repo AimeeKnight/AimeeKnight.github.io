@@ -67,39 +67,51 @@ Now that we have a better understanding of how the browser is working under the 
 
 Unfortunately specificity calculation has baffled many JavaScript developers, so let's take a deeper dive into how this calculation is made. We’ll use an example of a div with a class of "container". Nested inside that div we’ll have another div with an id of “main”. Inside that we’ll have a p tag that contains an anchor tag. Without peeking ahead, do you know what color the anchor tag will be?
 
-* #main a { color: green; }
+```
+#main a { 
+  color: green;
+}
 
-* p a { color: yellow; }
+p a { 
+  color: yellow;
+}
 
-* .container #main a { color: pink; }
+.container #main a {
+  color: pink;
+}
 
-* div #main p a { color: orange; }
+div #main p a { 
+  color: orange;
+}
 
-* a { color: red; }
+a { 
+  color: red;
+}
+```
 
 The answer is pink, with a value of 111. Here are the remaining results:
 
-* div #main p a: 103
+* `div #main p a`: 103
 
-* #main a: 101
+* `#main a`: 101
 
-* p a: 2
+* `p a`: 2
 
-* a: 1
+* `a`: 1
 
 To determine the number, you need to calculate the following:
 
 * First number: The number of ID selectors.
 
-* Second number: The number of class selectors, attribute selectors (ex: [type="text"], [rel="nofollow"]), and pseudo-classes (ex: :hover, :visited).
+* Second number: The number of class selectors, attribute selectors (ex: `[type="text"]`, `[rel="nofollow"]`), and pseudo-classes (ex: :hover, :visited).
 
-* Third number: The number of type selectors and pseudo-elements (ex: ::before, ::after).
+* Third number: The number of type selectors and pseudo-elements (ex: `::before`, `::after`).
 
 So, for a selector that looks like this:
 
-* #header .navbar li a:visited
+* `#header .navbar li a:visited`
 
-The value will be 122 because we have one ID, one class, one pseudo-class, and two type selectors (li, a).
+The value will be 122 because we have one ID, one class, one pseudo-class, and two type selectors (`li`, `a`).
 
 ### Positioning
 Second, I want to take a moment to discuss positioning. Positioning and layout go hand in hand as we saw earlier in this post. Layout is a recursive process that can be triggered on the entire render tree as a result of a global style change, or incrementally where only dirty parts of the page will be laid out over. One interesting thing to note if we think back to the render tree is that with absolute positioning, the object being laid out is put in the render tree in a different place than in the DOM tree.
@@ -113,6 +125,6 @@ The key to debudding z-index issues is understanding stacking contexts, and to a
 
 You can however, create new stacking contexts with properties other than z-index and this is where things get complicated. Opacity, when it’s value is less than one, filter when its value is something other than none, and mix-blend-mode when its value is something other than normal will actually create new stacking contexts. Just a reminder, blend mode determines how the pixels on a specific layer interact with the visible pixels on the layers below it. 
 
-The transform property also triggers a new stacking context when its value isn't none. For example, scale(1) and translate3d(0,0,0). Again, as a reminder the scale property is used to adjust size, and translate3d triggers the GPU into action for CSS transitions making them smoother.
+The transform property also triggers a new stacking context when its value isn't none. For example, `scale(1)` and `translate3d(0,0,0)`. Again, as a reminder the scale property is used to adjust size, and translate3d triggers the GPU into action for CSS transitions making them smoother.
 
 So, as you can see in my talk we're going to finally take a step back and stop mindlessly throwing darts at the dart board! We’ll discuss the most common issues developers face such as, z-index, the cascade, and positioning in depth by diving deep into the browser's internal rendering engine structure to see how our styles are actually parsed. Sure, you may still not have an eye for design, but you might just walk away a CSS guru!
