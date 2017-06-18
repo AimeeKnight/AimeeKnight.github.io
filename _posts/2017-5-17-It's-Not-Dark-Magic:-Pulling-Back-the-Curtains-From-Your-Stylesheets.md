@@ -89,11 +89,11 @@ a {
 }
 ```
 
-The answer is pink, with a value of 111. Here are the remaining results:
+The answer is pink, with a value of 1,1,1. Here are the remaining results:
 
-* `div #main p a`: 103
+* `div #main p a`: 1,0,3
 
-* `#main a`: 101
+* `#main a`: 1,0,1
 
 * `p a`: 2
 
@@ -111,7 +111,7 @@ So, for a selector that looks like this:
 
 * `#header .navbar li a:visited`
 
-The value will be 122 because we have one ID, one class, one pseudo-class, and two type selectors (`li`, `a`).
+The value will be 1,2,2 because we have one ID, one class, one pseudo-class, and two type selectors (`li`, `a`).
 
 ### Positioning
 Second, I want to take a moment to discuss positioning. Positioning and layout go hand in hand as we saw earlier in this post. Layout is a recursive process that can be triggered on the entire render tree as a result of a global style change, or incrementally where only dirty parts of the page will be laid out over. One interesting thing to note if we think back to the render tree is that with absolute positioning, the object being laid out is put in the render tree in a different place than in the DOM tree.
