@@ -38,13 +38,17 @@ Code](http://www.codenewbie.org/podcast/from-skates-to-code)
 * [Get Up And Code: Figure Skating and Software Development With Aimee
 Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-and-software-development-with-aimee-knight/)
 * [AFTK: Aimee Knight’s Journey From Figure Skater to Software Engineer](http://awayfromthekeyboard.com/2016/01/12/aimee-knights-journey-from-figure-skater-to-software-engineer/)
+* [Team Treehouse Success Stories with Aimee Knight](https://teamtreehouse.com/stories/aimee-knight)
+* [I Look Like An Engineer: Figure Skater Turns Software Engineer](https://www.sparkpost.com/blog/i-look-like-an-engineer-figure-skater-turns-software-engineer/)
 * [The Web Platform Podcast: Learning React](http://thewebplatformpodcast.com/86-learning-reactjs)
 * [JavaScript Air: For the Beginners](https://javascriptair.com/episodes/2016-06-15/)
-* [Nashville Women Programmers Q&A](https://www.meetup.com/NashvilleWomenProgrammers/events/235880914/)
+* [Nashville Women Programmers Q&A with Aimee Knight](https://www.meetup.com/NashvilleWomenProgrammers/events/235880914/)
+* [6 best practices for building a developer community](http://marketingland.com/6-best-practices-building-developer-community-203560)
 * [Building Programmers with Aimee Knight](https://building.fireside.fm/27)
 * [Women in the tech industry in the portrait: Aimee Knight](https://entwickler.de/online/development/women-in-tech-aimee-knight-579799885.html)
 * [My JS Story with Aimee Knight](https://devchat.tv/js-jabber/my-js-story-aimee-knight)
 * [Working with Junior Developers - Interview with Aimee Knight](https://survivejs.com/blog/junior-interview/)
+* [Chattanooga Area .NET User Group: Getting Comfortable Being Uncomfortable with Aimee Knight](https://www.meetup.com/Chattanooga-Area-NET-User-Group-CHADNUG/events/240331865/)
 
 ### Conference Talks:
 
