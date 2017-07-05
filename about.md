@@ -33,6 +33,7 @@ helping out at [Baltimore NodeSchool](http://nodeschool.io/baltimore/).
 
 * [JavaScript Jabber: Careers for Junior
 Developers](https://devchat.tv/js-jabber/153-jsj-careers-for-junior-developers-with-aimee-knight)
+* [The Web Platform Podcast: Learning React](http://thewebplatformpodcast.com/86-learning-reactjs)
 * [CodeNewbie: From Skates To
 Code](http://www.codenewbie.org/podcast/from-skates-to-code)
 * [Get Up And Code: Figure Skating and Software Development With Aimee
@@ -40,7 +41,6 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [AFTK: Aimee Knight’s Journey From Figure Skater to Software Engineer](http://awayfromthekeyboard.com/2016/01/12/aimee-knights-journey-from-figure-skater-to-software-engineer/)
 * [Team Treehouse Success Stories with Aimee Knight](https://teamtreehouse.com/stories/aimee-knight)
 * [I Look Like An Engineer: Figure Skater Turns Software Engineer](https://www.sparkpost.com/blog/i-look-like-an-engineer-figure-skater-turns-software-engineer/)
-* [The Web Platform Podcast: Learning React](http://thewebplatformpodcast.com/86-learning-reactjs)
 * [JavaScript Air: For the Beginners](https://javascriptair.com/episodes/2016-06-15/)
 * [Nashville Women Programmers Q&A with Aimee Knight](https://www.meetup.com/NashvilleWomenProgrammers/events/235880914/)
 * [6 best practices for building a developer community](http://marketingland.com/6-best-practices-building-developer-community-203560)
