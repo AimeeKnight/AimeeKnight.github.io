@@ -1,12 +1,12 @@
 Chances are if you're a web developer you're going to have to write some CSS from time to time. When you first looked at CSS it probably seemed like a breeze. You added some border here, changed some colors there. JavaScript was the hard part of front end development! Somewhere during your progression as a front end developer that changed though! What's worse is that many developers in the front end community have simply learned to dismiss CSS as a toy language. The truth however is that when we hit a wall many of us don’t actually understand what our CSS is doing under the hood! 
 
+![crystal ball]({{ site.url }}/assets/crystal-ball.jpg)
+
 For the first two years after my bootcamp I did full stack JavaScript and sprinkled in some CSS here and there. As a panelist on JavaScript Jabber I always felt like JavaScript was my bread and butter, so it’s what I spent the most time on. Last year however, I decided to focus on the front end and I realized that I just wasn’t able to debug my stylesheets in the same way I did my JavaScript!
 
 We all like to make jokes about it, but how many of us have actually taken the time to try and understand the CSS we're writing or reading. How many of us have actually reasonably debugged an issue to the next lowest abstraction layer when we hit a wall? Instead, we settle for the first StackOverflow answer, hacks, or we just let the issue go entirely.
 
 All too often developers are left completely puzzled when the browser renders CSS in ways they didn’t expect. It’s not dark magic though and as developers we know that computers are just parsing our instructions. Knowledge of internals can also be useful for advanced debugging and performance tuning. While many conference talks discuss how to fix common bugs, my talk (and this blog post) will focus on the why by taking a deep dive into browser internals to see how our styles are parsed and rendered.
-
-![crystal ball]({{ site.url }}/assets/crystal-ball.jpg)
 
 ### The DOM and CSSOM
 First, it’s important to understand that browsers contain a JavaScript engine and a rendering engine. We will focus on the latter. For example, we’ll be discussing details that pertain to WebKit (Safari), Blink (Chrome), Gecko (Firefox), and Trident/EdgeHTML (IE/Edge). The browser will undergo a process that includes conversion, tokenization, lexing, and parsing which ultimately constructs the DOM and CSSOM. 
