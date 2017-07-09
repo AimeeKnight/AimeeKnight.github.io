@@ -1,3 +1,5 @@
+![crystal ball]({{ site.url }}/assets/crystal-ball.jpg)
+
 Chances are if you're a web developer you're going to have to write some CSS from time to time. When you first looked at CSS it probably seemed like a breeze. You added some border here, changed some colors there. JavaScript was the hard part of front end development! Somewhere during your progression as a front end developer that changed though! What's worse is that many developers in the front end community have simply learned to dismiss CSS as a toy language. The truth however is that when we hit a wall many of us don’t actually understand what our CSS is doing under the hood! 
 
 For the first two years after my bootcamp I did full stack JavaScript and sprinkled in some CSS here and there. As a panelist on JavaScript Jabber I always felt like JavaScript was my bread and butter, so it’s what I spent the most time on. Last year however, I decided to focus on the front end and I realized that I just wasn’t able to debug my stylesheets in the same way I did my JavaScript!
