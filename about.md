@@ -23,8 +23,7 @@ As a former professional figure skater I have a tremendous amount of energy and
 grit. Outside of work, I’m a panelist on the [JavaScript
 Jabber](https://devchat.tv/js-jabber/) and [Angular
 Air](https://angularair.com/)
-podcasts, a co-organizer for [CharmCityJS](http://charmcityjs.com/), Board
-Director for [Operation Code](https://operationcode.org/), and an avid runner. I’m a type A
+podcasts, a co-organizer for [CharmCityJS](http://charmcityjs.com/), and an avid runner. I’m a type A
 personality, and I’m not at peace, unless I have a set of challenges in front of
 me. As a former bootcamper, I also really enjoy mentoring current students, and
 helping out at [Baltimore NodeSchool](http://nodeschool.io/baltimore/).
