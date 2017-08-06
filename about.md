@@ -47,7 +47,9 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Women in the tech industry in the portrait: Aimee Knight](https://entwickler.de/online/development/women-in-tech-aimee-knight-579799885.html)
 * [My JS Story with Aimee Knight](https://devchat.tv/js-jabber/my-js-story-aimee-knight)
 * [Working with Junior Developers - SurviveJS Interview with Aimee Knight](https://survivejs.com/blog/junior-interview/)
-* [Chattanooga Area .NET User Group: Getting Comfortable Being Uncomfortable with Aimee Knight](https://www.meetup.com/Chattanooga-Area-NET-User-Group-CHADNUG/events/240331865/)
+* [Chattanooga Area .NET User Group: Getting Comfortable Being Uncomfortable with Aimee Knight]
+* [State Local Government Developers Network Q&A with Aimee Knight](https://www.meetup.com/State-Local-Government-Developers-Network/)
+(https://www.meetup.com/Chattanooga-Area-NET-User-Group-CHADNUG/events/240331865/)
 
 ### Conference Talks:
 
@@ -60,6 +62,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Revolution Conf 2017](https://revolutionconf.com/)
 * [Newbie Remote Conf 2017](https://devchat.tv/register/newbie-remote-conf-2017-single)
 * [International JavaScript Conference 2017](https://javascript-conference.com/)
+* [Nodevember Keynote 2017](http://nodevember.org/keynoter/Aimee%20Knight)
 * [ngATL Conference 2018](http://ng-atl.org/Speakers)
 
 ### Contact me
