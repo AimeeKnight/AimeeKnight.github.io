@@ -48,6 +48,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [My JS Story with Aimee Knight](https://devchat.tv/js-jabber/my-js-story-aimee-knight)
 * [Working with Junior Developers - SurviveJS Interview with Aimee Knight](https://survivejs.com/blog/junior-interview/)
 * [Chattanooga Area .NET User Group: Getting Comfortable Being Uncomfortable with Aimee Knight](https://www.meetup.com/Chattanooga-Area-NET-User-Group-CHADNUG/events/240331865/)
+* [Listener Case Study with Aimee Knight/](http://2frugaldudes.com/2fd-039-listener-case-study-with-aimee-knight/)
 * [State Local Government Developers Network Q&A](https://www.meetup.com/State-Local-Government-Developers-Network/)
 
 ### Conference Talks:
@@ -55,7 +56,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Angular Connect 2015](https://youtu.be/B22o_yeDE_s)
 * [Nodevember 2015](https://youtu.be/9qkef7IXn6s)
 * [JS Remote Conf 2016](https://allremoteconfs.com/js-2016)
-* [Nation JS 2016](http://nationjs.com/)
+* [Nation JS 2016](https://vimeopro.com/user24051491/nationjs-node-day-march-11-2016/video/170104256)
 * [Revolution Conf 2016](http://revolutionconf.com)
 * [Codestock 2017](https://allremoteconfs.com/newbie-2016)
 * [Revolution Conf 2017](https://revolutionconf.com/)
