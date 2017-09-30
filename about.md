@@ -28,7 +28,7 @@ personality, and I’m not at peace, unless I have a set of challenges in front 
 me. As a former bootcamper, I also really enjoy mentoring current students, and
 helping out at [Baltimore NodeSchool](http://nodeschool.io/baltimore/).
 
-### Interviews:
+### Interviews and Meetups:
 
 * [JavaScript Jabber: Careers for Junior
 Developers](https://devchat.tv/js-jabber/153-jsj-careers-for-junior-developers-with-aimee-knight)
@@ -51,6 +51,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Nation JS 2016](https://vimeopro.com/user24051491/nationjs-node-day-march-11-2016/video/170104256)
 * [2 Frugal Dudes: Listener Case Study with Aimee Knight](http://2frugaldudes.com/2fd-039-listener-case-study-with-aimee-knight/)
 * [State Local Government Developers Network Q&A](https://www.meetup.com/State-Local-Government-Developers-Network/)
+* [Nash JS](https://www.meetup.com/nashjs/events/241564493/?eventId=241564493)
 
 ### Conference Talks:
 
@@ -64,6 +65,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Newbie Remote Conf 2017](https://devchat.tv/register/newbie-remote-conf-2017-single)
 * [International JavaScript Conference 2017](https://javascript-conference.com/)
 * [Nodevember Keynote 2017](http://nodevember.org/keynoter/Aimee%20Knight)
+* [NG-BE 2017](https://ng-be.org/)
 * [ngATL Conference 2018](http://ng-atl.org/Speakers)
 
 ### Contact me
