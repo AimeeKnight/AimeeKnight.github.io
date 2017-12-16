@@ -67,7 +67,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Nodevember Keynote 2017](http://nodevember.org/keynoter/Aimee%20Knight)
 * [NG-BE 2017](https://ng-be.org/)
 * [Improving Your Apps - Performance and Debugging Workshop](https://certifiedfreshevents.com/events/improving-your-apps/)
-* [ngATL Conference 2018](http://ng-atl.org/Speakers)
+* [ngATL Conference 2018](http://ng-atl.org/speakers)
 * [Lambda Squared 2018](https://www.lambda-squared.com/speakers)
 * [International JavaScript Conference 2018](https://javascript-conference.com/speaker/aimee-knight/)
 
