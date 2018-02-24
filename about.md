@@ -52,6 +52,8 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [2 Frugal Dudes: Listener Case Study with Aimee Knight](http://2frugaldudes.com/2fd-039-listener-case-study-with-aimee-knight/)
 * [State Local Government Developers Network Q&A](https://www.meetup.com/State-Local-Government-Developers-Network/)
 * [Nash JS](https://www.meetup.com/nashjs/events/241564493/?eventId=241564493)
+* [Complete Developer Podcast](http://completedeveloperpodcast.com/episode-130/)
+* [Fixate On Code](http://fixateoncode.libsyn.com/20-aimee-knight)
 
 ### Conference Talks:
 
@@ -70,6 +72,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [ngATL Conference 2018](http://ng-atl.org/speakers)
 * [Lambda Squared 2018](https://www.lambda-squared.com/speakers)
 * [International JavaScript Conference 2018](https://javascript-conference.com/speaker/aimee-knight/)
+* [O'Reilly Fluent Conference](https://conferences.oreilly.com/fluent/fl-ca/public/schedule/detail/64990)
 
 ### Contact me
 
