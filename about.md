@@ -54,6 +54,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Nash JS](https://www.meetup.com/nashjs/events/241564493/?eventId=241564493)
 * [Complete Developer Podcast](http://completedeveloperpodcast.com/episode-130/)
 * [Fixate On Code](http://fixateoncode.libsyn.com/20-aimee-knight)
+* [Front End Happy Hour](http://frontendhappyhour.com/episodes/angling-for-a-drink/)
 
 ### Conference Talks:
 
@@ -69,7 +70,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Nodevember Keynote 2017](http://nodevember.org/keynoter/Aimee%20Knight)
 * [NG-BE 2017](https://youtu.be/eajyNEsdx4k)
 * [Improving Your Apps - Performance and Debugging Workshop](https://certifiedfreshevents.com/events/improving-your-apps/)
-* [ngATL Conference 2018](http://ng-atl.org/speakers)
+* [ngATL Conference 2018](https://www.youtube.com/watch?v=DbXPbT8kqIE)
 * [Lambda Squared 2018](https://www.lambda-squared.com/speakers)
 * [International JavaScript Conference 2018](https://javascript-conference.com/speaker/aimee-knight/)
 * [O'Reilly Fluent Conference](https://conferences.oreilly.com/fluent/fl-ca/public/schedule/detail/64990)
