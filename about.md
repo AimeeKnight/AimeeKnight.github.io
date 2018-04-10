@@ -55,6 +55,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Complete Developer Podcast](http://completedeveloperpodcast.com/episode-130/)
 * [Fixate On Code](http://fixateoncode.libsyn.com/20-aimee-knight)
 * [Front End Happy Hour](http://frontendhappyhour.com/episodes/angling-for-a-drink/)
+* [Shop Talk Show](http://shoptalkshow.com/episodes/306-debugging-css-aimee-knight/)
 
 ### Conference Talks:
 
