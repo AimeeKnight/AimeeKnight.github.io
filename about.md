@@ -19,8 +19,7 @@ changes we were always needing, led me on a path of no return. I started to stay
 up really late so I could work on the site while (hopefully) no one was looking.
 Within a few weeks I was hooked.
 
-As a former professional figure skater I have a tremendous amount of energy and
-grit. Outside of work, I’m a panelist on the [JavaScript
+Outside of work, I’m a [Google Developer Expert](https://developers.google.com/experts/) for Web Technologies, a panelist on the [JavaScript
 Jabber](https://devchat.tv/js-jabber/) and [Angular
 Air](https://angularair.com/)
 podcasts, a co-organizer for [CharmCityJS](http://charmcityjs.com/), and an avid runner. I’m a type A
