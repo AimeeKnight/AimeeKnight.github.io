@@ -55,8 +55,9 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Fixate On Code](http://fixateoncode.libsyn.com/20-aimee-knight)
 * [Front End Happy Hour](http://frontendhappyhour.com/episodes/angling-for-a-drink/)
 * [Shop Talk Show](http://shoptalkshow.com/episodes/306-debugging-css-aimee-knight/)
-* [Microsoft Channel Interview: FiveThings Junior Developers Need to Know](https://youtu.be/PGF9HZQbiHc)
+* [Microsoft Channel 9 Interview: Five Things Junior Developers Need to Know](https://youtu.be/PGF9HZQbiHc)
 * [Changelog: When to use JavaScript over CSS](https://changelog.com/jsparty/31)
+* [Microsoft Channel 9 Interview: Five Things Developers Need to Know About CSS](https://youtu.be/-c0blZ6AmQE)
 
 ### Conference Talks:
 
