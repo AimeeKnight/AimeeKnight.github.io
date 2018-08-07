@@ -77,6 +77,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Lambda Squared 2018](https://www.lambda-squared.com/speakers)
 * [International JavaScript Conference 2018](https://javascript-conference.com/speaker/aimee-knight/)
 * [O'Reilly Fluent Conference](https://conferences.oreilly.com/fluent/fl-ca/public/schedule/detail/64990)
+* [Southeast PHP](https://southeastphp.com/sessions#38)
 * [No Fluff Just Stuff](https://nofluffjuststuff.com/conference/speaker/aimee_knight)
 
 ### Contact me
