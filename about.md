@@ -58,6 +58,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Microsoft Channel 9 Interview: Five Things Junior Developers Need to Know](https://youtu.be/PGF9HZQbiHc)
 * [Changelog: When to use JavaScript over CSS](https://changelog.com/jsparty/31)
 * [Microsoft Channel 9 Interview: Five Things Developers Need to Know About CSS](https://youtu.be/-c0blZ6AmQE)
+* [Modern Web Podcast: The state of CSS in 2018](https://www.podbean.com/media/share/pb-6hy6y-9877c4)
 
 ### Conference Talks:
 
