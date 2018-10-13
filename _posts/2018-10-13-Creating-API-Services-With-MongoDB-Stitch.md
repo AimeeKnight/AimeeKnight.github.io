@@ -34,6 +34,6 @@ Now we can pop over to the function editor and see some pre-populated logic. Go 
 
 Last up, we'll hop back over to our settings, copy our webhook URL, and make a fetch call from our React app to bring back our posts!
 
-![stitch-react]({{ site.url }}/assets/stitch/stitch-react.png)
+![react-stitch]({{ site.url }}/assets/stitch/react-stitch.png)
 
 As we can see, it's pretty nice to communicate with MongoDB Atlas from our front-end logic without needing to maintain our own API layer! I don't know about you, but I really couldn't come up with a better name than Stitch!
