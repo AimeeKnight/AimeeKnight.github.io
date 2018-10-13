@@ -11,7 +11,7 @@ Once we have our cluster, we can create our Stitch app by clicking the link on t
 
 Now that our Stitch application is created we’ll want to create a database and collection. Let's name our database "demo", and our collection "posts", since we’ll be using our Stitch app to populate our React application with post content.
 
-![db-create]({{ site.url }}/assets/stitch/db-create.png)
+![db-creation]({{ site.url }}/assets/stitch/db-creation.png)
 ![db-create-success]({{ site.url }}/assets/stitch/db-create-success.png)
 
 For the case of this demo app, let's go ahead and populate our collection with the post document we’ll want to query. To do this, we're going to go back to our cluster and click on "Collections". From there we can insert a simple post document with a title and body.
