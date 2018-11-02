@@ -82,6 +82,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [O'Reilly Fluent Conference](https://conferences.oreilly.com/fluent/fl-ca/public/schedule/detail/64990)
 * [Southeast PHP](https://southeastphp.com/sessions#38)
 * [No Fluff Just Stuff](https://nofluffjuststuff.com/conference/speaker/aimee_knight)
+* [Codestock Keynote 2019](http://codestock.org/announcing-codestock-2019s-saturday-keynote-speaker-aimme-knight/)
 
 ### Contact me
 
