@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 I’m Aimee Knight, a former figure skater and software engineer at
-[Built Technologies](https://getbuilt.com/). In 2014 I
+[npm, Inc.](https://www.npmjs.com/). In 2014 I
 decided to go all out, and spent six months as a student in the fourth cohort of
 the [Nashville Software School](http://nashvillesoftwareschool.com/) where I focused on JavaScript, Node.js, and Ruby
 on Rails.
