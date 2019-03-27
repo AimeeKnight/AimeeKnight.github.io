@@ -86,6 +86,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [No Fluff Just Stuff](https://nofluffjuststuff.com/conference/speaker/aimee_knight)
 * [Codestock Keynote 2019](http://codestock.org/announcing-codestock-2019s-saturday-keynote-speaker-aimme-knight/)
 * [Prairie Dev Con 2019](http://www.prairiedevcon.com/Speakers)
+* [DevOpsDays 2019](https://pheedloop.com/devopsdaysnashville/site/speakers/)
 
 ### Contact me
 
