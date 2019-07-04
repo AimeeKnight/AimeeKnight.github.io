@@ -87,6 +87,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Codestock Keynote 2019](http://codestock.org/announcing-codestock-2019s-saturday-keynote-speaker-aimme-knight/)
 * [Prairie Dev Con 2019](http://www.prairiedevcon.com/Speakers)
 * [DevOpsDays 2019](https://pheedloop.com/devopsdaysnashville/site/speakers/)
+* [Code on the Beach Keynote](https://www.codeonthebeach.com/speakers/aimee-knight)
 
 ### Contact me
 
