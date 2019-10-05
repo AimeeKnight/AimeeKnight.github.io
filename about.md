@@ -63,6 +63,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [JS Party: CSS in JS](https://changelog.com/jsparty/45)
 * [Franklin Developer Lunch and Learn](https://www.meetup.com/franklin-developer-lunch/events/254045930/)
 * [Second Career Devs: From Figure Skater to Full Stack Developer](https://secondcareerdevs.com/episodes/aimee-knight)
+* [IT Career Energizer](https://podcasts.apple.com/us/podcast/stop-fearing-failure-get-comfortable-being-uncomfortable/id1231387865?i=1000451972645)
 
 ### Conference Talks:
 
