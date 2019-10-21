@@ -4,8 +4,9 @@ title: About
 permalink: /about/
 ---
 
-I’m Aimee Knight, a former figure skater and software engineer at
-[npm, Inc](https://www.npmjs.com/). In 2014 I
+In light of recent events, please find an important link from a recent keynote here: [The Race of Life (white privilege)](https://www.youtube.com/embed/FBQx8FmOT_0). The slide can be found on [my GitHub](https://github.com/AimeeKnight/How-To-Not-Get-Dizzy/blob/master/index.html#L680)
+
+I’m Aimee Knight, a former figure skater and software architect. In 2014 I
 decided to go all out, and spent six months as a student in the fourth cohort of
 the [Nashville Software School](http://nashvillesoftwareschool.com/) where I focused on JavaScript, Node.js, and Ruby
 on Rails.
