@@ -66,7 +66,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Second Career Devs: From Figure Skater to Full Stack Developer](https://secondcareerdevs.com/episodes/aimee-knight)
 * [IT Career Energizer](https://podcasts.apple.com/us/podcast/stop-fearing-failure-get-comfortable-being-uncomfortable/id1231387865?i=1000451972645)
 * [Developer On Fire](https://developeronfire.com/podcast/episode-452-aimee-knight-inspired)
-* [6 Figure Dev](https://6figuredev.com/podcast/episode-121-pit-of-success-for-javascript-with-aimee-knight/)
+* [6 Figure Dev: Pit of Success for JavaScript](https://6figuredev.com/podcast/episode-121-pit-of-success-for-javascript-with-aimee-knight/)
 
 ### Conference Talks:
 
