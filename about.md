@@ -94,6 +94,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Code on the Beach Keynote 2019](https://www.codeonthebeach.com/speakers/aimee-knight)
 * [Music City Code 2019](https://musiccitytech.com/conferences/music-city-code/)
 * [Future Sync Conference 2020](https://2020.futuresync.co.uk/)
+* [JavaScript Remote Conference 2020](https://jsremoteconf.com/)
 
 ### Contact me
 
