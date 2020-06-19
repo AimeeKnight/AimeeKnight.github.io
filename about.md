@@ -95,7 +95,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Music City Code 2019](https://musiccitytech.com/conferences/music-city-code/)
 * [Future Sync Conference 2020](https://2020.futuresync.co.uk/)
 * [JavaScript Remote Conference 2020](https://jsremoteconf.com/)
-* [Technology Roundtable: Breaking Into the IT Industry](https://www.meetup.com/iR-Sessions/events/271107205/)
+* [Technology Roundtable: Breaking Into the IT Industry 2020](https://www.meetup.com/iR-Sessions/events/271107205/)
 
 ### Contact me
 
