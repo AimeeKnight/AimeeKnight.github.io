@@ -20,13 +20,12 @@ changes we were always needing, led me on a path of no return. I started to stay
 up really late so I could work on the site while (hopefully) no one was looking.
 Within a few weeks I was hooked.
 
-Outside of work, I’m a [Google Developer Expert](https://developers.google.com/experts/) for Web Technologies, a panelist on the [JavaScript
-Jabber](https://devchat.tv/js-jabber/) and [Angular
+Outside of work, I’m a [Google Developer Expert](https://developers.google.com/experts/) for Web Technologies focused on performance, an Organizer for DevOpsDays Nashville, and a panelist on the [JavaScript
+Jabber](https://devchat.tv/js-jabber/) podcast. Before that I was a panelist on the [Angular
 Air](https://angularair.com/)
-podcasts, a co-organizer for [CharmCityJS](http://charmcityjs.com/), and an avid runner. I’m a type A
+podcasts, volunteer at [Baltimore NodeSchool](http://nodeschool.io/baltimore/) and co-organizer for [CharmCityJS](http://charmcityjs.com/). I’m a type A
 personality, and I’m not at peace, unless I have a set of challenges in front of
-me. As a former bootcamper, I also really enjoy mentoring current students, and
-helping out at [Baltimore NodeSchool](http://nodeschool.io/baltimore/).
+me. As a former bootcamper, I also really enjoy mentoring current students and other junior developers.
 
 ### Interviews and Meetups:
 
