@@ -66,6 +66,8 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [IT Career Energizer](https://podcasts.apple.com/us/podcast/stop-fearing-failure-get-comfortable-being-uncomfortable/id1231387865?i=1000451972645)
 * [Developer On Fire](https://developeronfire.com/podcast/episode-452-aimee-knight-inspired)
 * [6 Figure Dev: Pit of Success for JavaScript](https://6figuredev.com/podcast/episode-121-pit-of-success-for-javascript-with-aimee-knight/)
+* [DevJourney Podcast: Discipline of Figure Skating to DevOps and Architecture](https://devjourney.info/Guests/115-AimeeKnight.html)
+* [8 on K8s Interview](https://www.giantswarm.io/blog/8-on-k8s-with-aimee-knight-giant-swarm)
 
 ### Conference Talks:
 
