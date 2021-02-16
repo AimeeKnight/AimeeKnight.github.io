@@ -68,6 +68,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [6 Figure Dev: Pit of Success for JavaScript](https://6figuredev.com/podcast/episode-121-pit-of-success-for-javascript-with-aimee-knight/)
 * [DevJourney Podcast: Discipline of Figure Skating to DevOps and Architecture](https://devjourney.info/Guests/115-AimeeKnight.html)
 * [8 on K8s Interview](https://www.giantswarm.io/blog/8-on-k8s-with-aimee-knight-giant-swarm)
+* [How to Systematically Debug Your CSS Just Like You Would Your JavaScript](https://www.meetup.com/at-wix/events/275741950/?fbclid=IwAR12j3RexRZlknUU11MUnWkQkS7bLabE9rO2XBhdjHvzABmZVuIGakou-AI)
 
 ### Conference Talks:
 
