@@ -3,9 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-In light of recent events, please find an important link from a recent keynote I gave here: [The Race of Life (white privilege)](https://www.youtube.com/embed/FBQx8FmOT_0) which speaks to my heart and intent to make our industry a welcoming and supportive place for every person. The full slide deck can be found on my [GitHub](https://github.com/AimeeKnight/How-To-Not-Get-Dizzy/blob/master/index.html#L680).
-
 I’m Aimee Knight, a former figure skater and software architect. In 2014 I
 decided to go all out, and spent six months as a student in the fourth cohort of
 the [Nashville Software School](http://nashvillesoftwareschool.com/) where I focused on JavaScript, Node.js, and Ruby
