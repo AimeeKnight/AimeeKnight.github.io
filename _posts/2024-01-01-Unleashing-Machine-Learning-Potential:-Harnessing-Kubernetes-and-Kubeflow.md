@@ -1,4 +1,4 @@
-#Machine Learning Potential: Harnessing Kubernetes and Kubeflow
+Machine Learning Potential: Harnessing Kubernetes and Kubeflow
 
 ## Introduction
 Machine learning has become the cornerstone of innovation across industries, propelling advancements and unlocking new possibilities. Yet, the orchestration and management of ML workflows often pose significant challenges. Enter Kubernetes and Kubeflow, two powerful tools revolutionizing the landscape of machine learning by streamlining workflows, optimizing resource management, and enabling scalability.
