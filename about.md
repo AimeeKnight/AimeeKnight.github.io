@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 I’m Aimee Knight, a former figure skater and software architect.
-In addition to my day to day work, I'm open to offering mentorship or consulting services. I'm eager to explore how I can assist you in conventional ways or contribute on a volunteer basis for suitable projects or individual situations. Feel free to get in touch, and let's discuss how I can be of help!
+In addition to my day to day work, I'm open to offering mentorship and consulting on projects. I'm eager to explore how I can assist you in conventional ways or contribute on a volunteer basis for suitable projects or individual situations. Feel free to get in touch, and let's discuss how I can be of help!
 
 Coming from a background in collegiate sports I’m highly driven. After my first
 degree, I spent a lot of time working with developers and in late 2012 my career
