@@ -3,10 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
-I’m Aimee Knight, a former figure skater and software architect. In 2014 I
-decided to go all out, and spent six months as a student in the fourth cohort of
-the [Nashville Software School](http://nashvillesoftwareschool.com/) where I focused on JavaScript, Node.js, and Ruby
-on Rails.
+I’m Aimee Knight, a former figure skater and software architect.
+In addition to my day to day work, I'm open to offering mentorship or consulting services. I'm eager to explore how I can assist you in conventional ways or contribute on a volunteer basis for suitable projects or individual situations. Feel free to get in touch, and let's discuss how I can be of help!
 
 Coming from a background in collegiate sports I’m highly driven. After my first
 degree, I spent a lot of time working with developers and in late 2012 my career
