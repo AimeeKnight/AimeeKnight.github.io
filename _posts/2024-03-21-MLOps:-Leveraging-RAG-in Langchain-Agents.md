@@ -1,5 +1,3 @@
-Understanding RAG Within Langchain Agents
-
 In the context of MLOps and Langchain, agents can incorporate the RAG (Retrieval-Augmented Generation) approach to enhance their capabilities. RAG involves retrieving relevant information from external sources (e.g., databases, knowledge bases, or web searches) and using it to augment the input to a language model, improving the model's ability to generate accurate and factual responses.
 
 Langchain agents can leverage RAG as one of their tools or components, enabling them to retrieve relevant information from various sources and incorporate it into their decision-making process. This allows agents to tackle complex tasks that require external knowledge or factual information beyond what is present in the language model's training data.
