@@ -1,8 +1,8 @@
-As a new Strategic Cloud Architect at CDW, I had the privilege of attending the highly anticipated Google Cloud Next 2024 event. While the buzz around Generative AI was palpable, it was far from the only exciting topic. With that said, I wanted to take some time to record some highlights as it was also my first in person event in my new role as a Strategic Cloud Architect at CDW and Google’s most attended Cloud Next event yet.
+I had the pleasure of attending Google Cloud Next 2024 and while it comes as no surprise that Generative AI was a huge part, it was by no means the only exciting part of the event. With that said, I wanted to take some time to record some highlights as it was also my first in person event in my new role as a Strategic Cloud Architect at CDW and Google’s most attended Cloud Next event yet.
 
-## CDW's Partnership with Google and Partner Summit
+## Partner Summit
 
-First up, I want to talk about CDW's Partnership with Google and all things Partner Summit. While I've worked with Google Cloud for years this is the first time I’ve done so as an official partner. Because of this, the team at CDW is able to gain an exclusive viewpoint into what's top of mind in the ecosystem for 2024 and beyond. This means I was able to attend the dedicated partner keynote as well as targeted breakout sessions with the Google team to collaborate directly. For instance, it's this kind of partnership that enabled our team to leverage Gemini 1.5 for our demo this year months before it was even announced at Next!
+First up, I want to talk about Partnerships with Google and all things Partner Summit. While I've worked with Google Cloud for years this is the first time I’ve done so as an official partner. This means I was able to attend the dedicated partner keynote as well as targeted breakout sessions with the Google team to collaborate directly. For instance, it's this kind of partnership that enabled our team to leverage Gemini 1.5 for our demo this year months before it was even announced at Next!
 
 ## Kubernetes and Google Kubernetes Engine (GKE)
 
