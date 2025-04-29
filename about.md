@@ -3,24 +3,11 @@ layout: page
 title: About
 permalink: /about/
 ---
-I’m Aimee Knight, a former figure skater and software architect.
-In addition to my day to day work, I'm open to offering mentorship and consulting on projects. I'm eager to explore how I can assist you in conventional ways or contribute on a volunteer basis for suitable projects or individual situations. Feel free to get in touch, and let's discuss how I can be of help!
+I'm Aimee Knight, a former figure skater turned Software Engineer. My tech journey began in 2012 when managing a company CMS sparked my curiosity. Currently, I serve as an Architect for CDW's Google Cloud Practice where I drive Google Cloud adoption through emerging services evaluation and ensure solution architecture best practices across client engagements. With over a decade in the software delivery lifecycle, I've worked across frontend/backend development, infrastructure architecture, DevOps, and site reliability.
 
-Coming from a background in collegiate sports I’m highly driven. After my first
-degree, I spent a lot of time working with developers and in late 2012 my career
-path began to diverge. When a developer for my employer’s site handed off their
-CMS to me saying “don’t touch anything outside of this” my fate was sealed. My
-curiosity, coupled with  increasing frustrations from the surmounting code
-changes we were always needing, led me on a path of no return. I started to stay
-up really late so I could work on the site while (hopefully) no one was looking.
-Within a few weeks I was hooked.
+Prior to my current role, I was Senior Site Reliability Manager at Paramount Global, leading Kubernetes cluster migrations and managing multi-regional architecture for two Super Bowl broadcasts. My career spans startups in education, construction, and banking, plus roles at Warner Brothers Discovery and NPM, Inc. (acquired by GitHub). I hold a Bachelor's in Communication Management from UAB (Summa Cum Laude) and attended the Nashville Software School. I'm a [Google Cloud Developer Expert](https://developers.google.com/profile/u/aimeemarieknight) focused on Application Modernization, certified in Generative AI on Google Cloud, and an International Keynote Speaker.
 
-Outside of work, I’m a [Google Developer Expert](https://developers.google.com/experts/) for Web Technologies focused on performance, an Organizer for DevOpsDays Nashville, and a panelist on the [JavaScript
-Jabber](https://devchat.tv/js-jabber/) podcast. Before that I was a panelist on the [Angular
-Air](https://angularair.com/)
-podcasts, volunteer at [Baltimore NodeSchool](http://nodeschool.io/baltimore/) and co-organizer for [CharmCityJS](http://charmcityjs.com/). I’m a type A
-personality, and I’m not at peace, unless I have a set of challenges in front of
-me. As a former bootcamper, I also really enjoy mentoring current students and other junior developers.
+In the past I helped organized DevOpsDays Nashville and [CharmCityJS](http://charmcityjs.com/), was a panelist on the [JavaScript Jabber](https://devchat.tv/js-jabber/) and [Angular Air](https://angularair.com/) podcasts, and volunteered for [Baltimore NodeSchool](http://nodeschool.io/baltimore/). As a former bootcamper with a competitive sports background, I enjoy mentoring students and junior developers. I'm available for mentorship and consulting, including volunteer opportunities for suitable projects. Let's connect!
 
 ### Interviews and Meetups:
 
