@@ -95,6 +95,8 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [Future Sync Conference 2020](https://2020.futuresync.co.uk/)
 * [JavaScript Remote Conference 2020](https://jsremoteconf.com/)
 * [Technology Roundtable: Breaking Into the IT Industry 2020](https://www.meetup.com/iR-Sessions/events/271107205/)
+* [Google Next 2025: Unlocking Cloud Potential for Innovation and Growth](https://cloud.withgoogle.com/next/25/session-library?filters=session-type-cloud-talks&session=CT1-31#day_1)
+
 
 ### Contact me
 
