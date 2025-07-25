@@ -53,7 +53,7 @@ Knight](http://getupandcode.com/2015/04/10/get-up-and-code-086-figure-skating-an
 * [How to Systematically Debug Your CSS Just Like You Would Your JavaScript](https://www.meetup.com/at-wix/events/275741950/?fbclid=IwAR12j3RexRZlknUU11MUnWkQkS7bLabE9rO2XBhdjHvzABmZVuIGakou-AI)
 * [Lift & Transform with Google Cloud VMware Engine & CDW](https://cdw.partnermarketingstudio.com/sw/swchannel/registration/internet/registration.cfm?RegPageID=6864445&traffictype=Direct)
 * [Meeting Expectations Through Site Reliability Engineering](https://dvs.cdw.com/digital-velocity-podcast-ep14)
-
+* [Mastering SRE: Insights in Scale and at Capacity](https://adventuresindevops.com/episodes/sre-insights-from-the-streaming-world/)
 
 ### Conference Talks:
 
