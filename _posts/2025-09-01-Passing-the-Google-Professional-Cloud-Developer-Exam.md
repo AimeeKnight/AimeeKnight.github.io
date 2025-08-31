@@ -1,5 +1,3 @@
-# Passing the Google Professional Cloud Developer Exam: A Developer's Journey
-
 After six years building full-stack applications and another six years in platform engineering, DevOps, and SRE, I thought I knew cloud development. When I became a Google Cloud Developer Expert this year focusing on application modernization, I figured the Professional Cloud Developer certification would be straightforward validation of what I already knew.
 
 I was wrong—and that's exactly why the certification was worth pursuing.
