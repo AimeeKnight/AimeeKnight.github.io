@@ -1,5 +1,3 @@
-# Why I Miss GCP's IAM When Working in AWS
-
 I've been working in AWS recently, and I keep catching myself missing Google Cloud Platform. Not the console UI, not the service names—specifically, IAM.
 
 After a decade working as a DevOps engineer, cloud architect, and software engineer across various projects—most of that time spent in GCP—I've developed opinions about how cloud permissions should work. And honestly? GCP's approach just clicks for me in a way AWS's doesn't.
