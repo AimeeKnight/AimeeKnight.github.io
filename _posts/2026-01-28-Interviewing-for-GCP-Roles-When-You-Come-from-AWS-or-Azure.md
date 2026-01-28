@@ -1,5 +1,3 @@
-# Interviewing for GCP Roles When You Come from AWS or Azure
-
 I started my cloud journey with Google Cloud Platform, and I'll be honest—I got lucky. GCP was my first cloud, so I never had to deal with the mental overhead of translating concepts from one platform to another. But over the years, as I've interviewed candidates and talked with engineers making the switch, I've noticed a pattern: really talented people psyching themselves out about GCP simply because it's unfamiliar territory.
 
 If you're an AWS or Azure engineer interviewing for a role that uses GCP heavily, this post is for you. You already understand cloud infrastructure. You don't need to become a GCP expert overnight. What you need is a mental map—enough to speak confidently about how your existing knowledge translates, and an understanding of where GCP does things differently.
