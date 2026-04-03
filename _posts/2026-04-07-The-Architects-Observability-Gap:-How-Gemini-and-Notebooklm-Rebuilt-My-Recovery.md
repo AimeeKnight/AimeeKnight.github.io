@@ -20,7 +20,7 @@ I decided to upload my raw MRI images to **Gemini**. Leveraging its advanced mul
 
 ## Phase 2: Building the "Recovery Studio" with NotebookLM
 
-Post-surgery, I was hit with a distributed systems problem: my data lived everywhere. I had operative reports in one portal, DXA scans showing osteopenia in another, and dozens of physical therapy protocols in various PDF formats.
+Post-surgery, I was hit with a distributed systems problem: my data lived everywhere. I had operative reports in one portal, DEXA scans showing osteopenia in another, and dozens of physical therapy protocols in various PDF formats.
 
 I used **NotebookLM** to create a private, grounded **Recovery Studio**. By uploading my entire medical history—test results, surgery notes, and rehab scripts—I transformed static documents into an interactive knowledge base.
 
@@ -42,7 +42,7 @@ As a Google Developer Expert, I’ve worked with many platforms, but the integra
 
 We often view AI as a tool for work, but it is a profoundly human tool for life. It helped me move from a "patient" (a passive recipient of care) to an "architect" of my own recovery.
 
-If you are navigating a complex journey—technical or medical—don't just rely on the defaults. Build your own studio. Trust the vision models.
+If you are navigating a complex journey either technical or medical, don't just rely on the defaults. Build your own studio. Trust the vision models.
 
 ---
 
