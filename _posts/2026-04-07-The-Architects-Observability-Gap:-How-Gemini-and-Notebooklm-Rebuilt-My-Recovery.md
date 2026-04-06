@@ -1,8 +1,6 @@
-# The Architect’s Observability Gap: How Gemini and NotebookLM Rebuilt My Recovery
+As a **Software Architect**, my career is built on the pillars of **observability, data integrity, and system reliability.** When I faced two major knee surgeries over the past year—including a complex meniscus revision—I realized that the modern medical experience has a massive observability gap. Patient data is siloed, imaging is interpreted with extreme caution, and "rehab protocols" are frequently just a stack of loose, disconnected PDFs.
 
 ![Knee MRI]({{ site.url }}/assets/knee-mri.jpg)
-
-As a **Software Architect**, my career is built on the pillars of **observability, data integrity, and system reliability.** When I faced two major knee surgeries over the past year—including a complex meniscus revision—I realized that the modern medical experience has a massive observability gap. Patient data is siloed, imaging is interpreted with extreme caution, and "rehab protocols" are frequently just a stack of loose, disconnected PDFs.
 
 During this journey, I didn't just use AI; I integrated **[Google Gemini](https://gemini.google.com/?utm_campaign=deveco_gdemembers&utm_source=deveco)** and **[NotebookLM](https://notebooklm.google.com/?utm_campaign=deveco_gdemembers&utm_source=deveco)** into my primary tech stack for life. Here is how Google Cloud’s AI ecosystem became my recovery co-pilot.
 
