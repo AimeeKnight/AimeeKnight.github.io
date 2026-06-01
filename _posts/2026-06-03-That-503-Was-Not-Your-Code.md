@@ -4,8 +4,6 @@ Our team builds a complaint intake tool for the FDA. It simplifies the reporting
 
 That was the right instinct. It just wasn't the right layer.
 
----
-
 ## The Assumption That Made Sense
 
 When you spend most of your time writing application code, your mental model of a request is pretty direct. A user does something, the app handles it, a response comes back. If something goes wrong, you look at the app.
@@ -13,8 +11,6 @@ When you spend most of your time writing application code, your mental model of 
 That model is correct for your layer of the stack. The problem is that in a cloud environment, there are layers between the client and your application that your code never touches. And those layers can fail too.
 
 In our case, the team concluded the upstream API was degraded. That was a reasonable read. The 503s were real. But the API itself was healthy. The failure was happening before the request ever reached it.
-
----
 
 ## What Actually Lives Between the Client and Your App
 
@@ -25,8 +21,6 @@ Those health checks are a separate configuration from your application. You defi
 Here is the part that trips people up: when a request comes in and gets routed toward an unhealthy instance, the load balancer returns a 503 to the client. Not your application. The load balancer.
 
 From the client's perspective, and from a basic API response, that 503 looks identical to a 503 your application would generate. Same status code. Same surface appearance. Completely different origin and completely different fix.
-
----
 
 ## How to Tell the Difference
 
@@ -40,8 +34,6 @@ This is where GCP gives you specific tools, and knowing where to look changes ev
 
 If all three of those are clean, then it is your application. Not before.
 
----
-
 ## Explaining It to the Team
 
 The framing that seemed to click was this: think of the load balancer as a bouncer working the door. Your application is the bar inside. Before anyone gets in, the bouncer checks whether things are running smoothly back there. If the check comes back wrong, the bouncer turns the customer away at the door. The customer gets a 503. The bar never knew they were there.
@@ -49,8 +41,6 @@ The framing that seemed to click was this: think of the load balancer as a bounc
 The 503 the customer receives looks the same whether the bar is actually closed or the bouncer just decided not to let them in. But the fix is in completely different places. If the bouncer is the problem, changing something in the bar does nothing.
 
 Once the team had that picture, the conversation shifted from "why is the API broken" to "why is the health check failing," which is the right question. We traced it back to a backend instance that was experiencing intermittent latency on startup, causing it to miss the health check threshold and get marked unhealthy before it was ready to serve traffic.
-
----
 
 ## What to Do Next Time
 
@@ -62,8 +52,6 @@ When you see intermittent 503s in a GCP-hosted service, run through these two ch
 If both of those are clean, then your application is worth investigating. But starting there without ruling out the load balancer layer first is how you spend an hour debugging code that was never broken.
 
 The 503 that scared us that afternoon was not coming from anyone's code. It was a bouncer doing its job, flagging an instance that was not quite ready. Knowing where to look made the difference between a long incident and a quick one.
-
----
 
 ### Resources for Developers
 
