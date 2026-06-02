@@ -1,5 +1,3 @@
-# How it Started
-
 The alerts started coming in mid-afternoon. Intermittent 503s. Not a flat outage, not a clean failure. Just enough errors to be alarming and inconsistent enough to be confusing. The kind of thing that makes you refresh the dashboard three times hoping the number changes.
 
 Our team builds a complaint intake tool for the FDA. It simplifies the reporting process for the public and agency employees, and it integrates with several upstream systems. When one of those integrations started returning 503s, the software engineering team did exactly what made sense from where they sat: they started looking at the API.
