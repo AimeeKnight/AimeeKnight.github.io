@@ -1,8 +1,8 @@
 Deploying applications in federal environments often feels like navigating two opposing forces. On one side, you have the operational demand for rapid delivery and modern deployment patterns. On the other, you have rigid compliance frameworks, strict infrastructure controls, and legacy platform constraints.
 
-When setting up our application stack within the FDA’s [Google Cloud](https://cloud.google.com/?utm_campaign=deveco_gdemembers&utm_source=deveco) project, we needed a strategy that met strict compliance requirements without slowing down engineering velocity or driving up cloud spend. 
+When setting up our application stack within the FDA’s AWS GovCloud account, we needed a strategy that met strict compliance requirements without slowing down engineering velocity or driving up cloud spend.
 
-By leveraging Mirantis Kubernetes Engine (MKE) running on [Google Compute Engine](https://cloud.google.com/compute?utm_campaign=deveco_gdemembers&utm_source=deveco) (GCE) instances, we built a modern, declarative platform that solved these exact challenges. Here is how we used MKE on Compute Engine instances to accelerate our Authority to Operate (ATO), optimize our compute costs, and mitigate operational risk.
+By leveraging Mirantis Kubernetes Engine (MKE) running on AWS EC2 instances, we built a modern, declarative platform that solved these exact challenges. Here is how we used MKE in GovCloud to accelerate our Authority to Operate (ATO), optimize our compute costs, and mitigate operational risk.
 
 ---
 
@@ -18,21 +18,32 @@ Kubernetes natively solved this for us above the compute layer. Instead of manag
 
 We interacted directly with the Kubernetes API to deploy these manifests straight from our repository. From an auditor's perspective, this provided instant compliance alignment. Every change, configuration shift, and environment modification was committed to Git and executed declaratively. We had a complete audit trail of what was running, how it was configured, and who approved the change.
 
-To complement this, we integrated Mirantis Container Registry (MCR) into our workflow. MCR gave us a controlled, secure image management layer. Whether we were pushing updates to a local data center development environment or deploying into production on Google Cloud, we guaranteed that the underlying container images were identical, scanned, and policy-compliant.
+To complement this, we integrated Mirantis Container Registry (MCR) into our workflow. MCR gave us a controlled, secure image management layer. Whether we were pushing updates to a local data center development environment or deploying into production in AWS GovCloud, we guaranteed that the underlying container images were identical, scanned, and policy-compliant.
 
 ---
 
-## 2. Maximizing Compute Efficiency and Cutting Compute Engine Overhead
+## 2. Maximizing Compute Efficiency and Cutting EC2 Overhead
 
 Cloud costs in federal environments can balloon quickly when applications are provisioned using traditional, static architecture patterns. 
 
-Normally, the default approach in cloud migrations is spinning up dedicated Compute Engine virtual machines for every application layer or microservice. In high-compliance environments, this results in massively underutilized instances, where you pay for idle CPU and memory headroom on dozens of separate VMs just to maintain isolation boundaries.
+Normally, the default approach in cloud migrations is spinning up dedicated EC2 instances for every application layer or microservice. In high-compliance environments, this results in massively underutilized virtual machines, where you pay for idle CPU and memory headroom on dozens of separate instances just to maintain isolation boundaries.
 
-By running our workloads on an existing MKE cluster hosted on [Google Compute Engine](https://cloud.google.com/compute?utm_campaign=deveco_gdemembers&utm_source=deveco) worker nodes, we shifted to a multi-tenant compute model.
+By running our workloads on an existing MKE cluster running on EC2, we shifted to a multi-tenant compute model:
 
-Instead of managing dedicated Compute Engine VMs per tier, our application runs as a NodePort service inside the cluster. Kubernetes handles all the bin-packing and pod scheduling across the worker nodes. If an application instance experiences a spike in traffic, the Kubernetes scheduler places additional pods on nodes with available capacity. 
+```
++-----------------------------------------------------------------------+
+|                         AWS EC2 Worker Nodes                          |
+|  +---------------------------------+-------------------------------+  |
+|  |       Demo Namespace            |     Production Namespace      |  |
+|  |  [ App Pod ]  [ App Pod ]       |  [ App Pod ]  [ App Pod ]     |  |
+|  +---------------------------------+-------------------------------+  |
+|  |                 Shared K8s Bin-Packing & Scheduling             |  |
++-----------------------------------------------------------------------+
+```
 
-When we need to handle higher load, we simply increase our deployment replica count in the manifest rather than provisioning, patching, and bootstrapping new Compute Engine instances. This bin-packing model allowed us to maximize compute utilization across our VM fleet, directly driving down our monthly Google Cloud footprint and infrastructure overhead.
+Instead of managing dedicated EC2 instances per tier, our application runs as a NodePort service inside the cluster. Kubernetes handles all the bin-packing and pod scheduling across the worker nodes. If an application instance experiences a spike in traffic, the Kubernetes scheduler places additional pods on nodes with available capacity. 
+
+When we need to handle higher load, we simply increase our deployment replica count in the manifest rather than provisioning, patching, and bootstrapping new EC2 instances. This bin-packing model allowed us to maximize compute utilization across our EC2 fleet, directly driving down our monthly AWS footprint and infrastructure overhead.
 
 ---
 
@@ -40,7 +51,7 @@ When we need to handle higher load, we simply increase our deployment replica co
 
 One of the most frustrating sources of production incidents is environment drift: the gap between where an application is demoed or tested and where it actually runs live. 
 
-We eliminated this risk by hosting both our demo and production environments within the same MKE cluster on the exact same underlying Compute Engine instances, isolated logically using Kubernetes namespaces. 
+We eliminated this risk by hosting both our demo and production environments within the same MKE cluster on the exact same underlying EC2 nodes, isolated logically using Kubernetes namespaces. 
 
 Because demo and production share the exact same runtime environment, we completely removed the "works in demo, fails in production" dynamic. The container runtime, the host Linux kernel, the networking stack, and the cluster-level configurations are identical. The only variables separating our environments are namespace boundaries, specific resource quotas, and environment-scoped configurations.
 
@@ -59,6 +70,6 @@ Finally, relying on native Kubernetes primitives gives us built-in operational r
 
 ## Final Thoughts
 
-Navigating compliance in government cloud accounts does not mean you have to sacrifice modern engineering practices. By combining Mirantis Kubernetes Engine running on [Google Compute Engine](https://cloud.google.com/compute?utm_campaign=deveco_gdemembers&utm_source=deveco) with a manifest-driven deployment workflow, we met agency security and governance standards while simultaneously cutting compute costs and eliminating environment drift.
+Navigating compliance in AWS GovCloud does not mean you have to sacrifice modern engineering practices. By combining Mirantis Kubernetes Engine with a manifest-driven deployment workflow, we met agency security and governance standards while simultaneously cutting compute costs and eliminating environment drift.
 
 If you are currently navigating similar IaC or compliance constraints in federal cloud environments, I would love to hear how your team is tackling it.
